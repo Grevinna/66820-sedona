@@ -5,8 +5,75 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header>
+      <ul>
+        <li>
+          <a>Информация</a>
+        </li>  
+        <li>
+          <a>Фото и видео</a>
+        </li> 
+        <li>
+          <a><img src="img/Sity-of-Sedona-blue.png" width="138" height="70" alt="logo"></a>
+        </li>
+        <li>
+          <a>Карта штата</a>
+        </li> 
+        <li>
+          <a>Гостиницы</a>
+        </li> 
+      </ul>   
+    </header>
+    <main>
+      <section>
+        
+      </section>
+      <section>
+          
+      </section>
+      <section>
+        <b>Заинтересовались?</b>
+        <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостинец в Седоне</p>
+        <a>Поиск гостинецы в Седоне</a>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">  
+<!--    Изметить типы полей ввода        -->
+          <label>
+            Дата заезда:
+            <input class="" type="text" name="login" placeholder="24 апереля 2016">
+          </label>
+          <label>
+            Дата выезда:
+            <input class="" type="text" name="login" placeholder="2">
+          </label>
+          <label>
+            Взрослые:
+            <input class="" type="text" name="login" placeholder="0">
+          </label>
+          <label>
+            Дети:
+            <input class="" type="text" name="login" placeholder="4 июля 2016">
+          </label>
+          <button class="btn" type="submit">Найти</button> 
+<!--      Только вот кнопка по идее должна стать ссылкой.  Сделать ссылкой сразу? Или JS сам потом перенаправит "скрыто" от кнопки?     -->
+        </form>
+      </section>
+      <section>
+        <img src="img/map.jpg" width="768" height="593" alt="map"> 
+      </section>
+    </main>
+    <footer>
+      <section>
+        <a>#VisitSedona</a> 
+      </section>
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
+      </section>
+      <section>
+        <a>Website by</a>
+<!--   <img src="img/html-academy-black.png" width="113" height="39" alt="htmlacademy"> вставить при помощи before в CSS     -->
+      </section>
+    </footer>
   </body>
 </html>
