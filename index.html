@@ -6,52 +6,106 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li>
-          <a>Информация</a>
-        </li>  
-        <li>
-          <a>Фото и видео</a>
-        </li> 
-        <li>
-          <a><img src="img/Sity-of-Sedona-blue.png" width="138" height="70" alt="logo"></a>
-        </li>
-        <li>
-          <a>Карта штата</a>
-        </li> 
-        <li>
-          <a>Гостиницы</a>
-        </li> 
-      </ul>   
+      <nav class="main-navigation">
+				<ul>
+					<li>
+						<a>Информация</a>
+					</li>  
+					<li>
+						<a>Фото и видео</a>
+					</li> 
+					<li>
+						<a><img src="img/Sity-of-Sedona-blue.png" width="138" height="70" alt="logo"></a>
+					</li>
+					<li>
+						<a>Карта штата</a>
+					</li> 
+					<li>
+						<a>Гостиницы</a>
+					</li> 
+				</ul>  
+			</nav>	
     </header>
     <main>
       <section>
-        
+        <p>Welcome</p>
+				<p>to the gorgeous</p>
+				<h1>Sedona</h1>
+				<p>"Because the Grand Canyon sucks!"</p>
       </section>
       <section>
-          
+        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p>Рассмотрим 5 причин, по которым Седонакруче, чем Гранд Каньон!</p>
+<!--	 Думала сделать списком определений (кажется, что это как-то логичнее получается), но так и не решилась из-за его оформления наискосок (dl>dt+dd)	
+
+Как вариант <h2> можно сделать в начале <ul>
+
+-->
+				<ul>
+				  <li>
+						Настоящий городок
+						<p>-№1-</p>
+						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+						<img src="img/town.jpg" width="512" height="256" alt="town">
+						<ul>
+<!--				Картинки жилье-еда-сувениры after-before вставлять или img?			-->
+							<li>
+								Жилье
+								<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							</li>
+							<li>
+								Еда
+								<p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+							</li>
+							<li>
+								Сувениры
+								<p>Не только китайского, но и местного производства!</p>
+						  </li>
+					  </ul>
+					</li>	
+					<li>
+						<img src="img/devil's-bridge.jpg" width="512" height="256" alt="devil's-bridge">
+						Там есть Мост Дьявола	
+						<p>-№2-</p>
+						<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+					</li>
+					<li>
+						Небольшая площадь
+						<p>-№3-</p>
+						<p>Все достопримечательности находятся оччень близко</p>
+					</li>
+					<li>
+						Красивая дорога
+						<p>-№4-</p>
+						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</li>
+					<li>
+						Мало туристов
+						<p>-№5-</p>
+						<p>Большинство едет в Гранд Каньон и толпится там</p>
+					</li>
+				</ul>
       </section>
       <section>
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостинец в Седоне</p>
         <a>Поиск гостинецы в Седоне</a>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">  
-<!--    Изметить типы полей ввода        -->
           <label>
             Дата заезда:
-            <input class="" type="text" name="login" placeholder="24 апереля 2016">
+            <input class="" type="date" name="" placeholder="24 апереля 2016">
           </label>
           <label>
             Дата выезда:
-            <input class="" type="text" name="login" placeholder="2">
+            <input class="" type="date" name="" placeholder="4 июля 2016">
           </label>
           <label>
             Взрослые:
-            <input class="" type="text" name="login" placeholder="0">
+            <input class="" type="number" name="" placeholder="0">
           </label>
           <label>
             Дети:
-            <input class="" type="text" name="login" placeholder="4 июля 2016">
+            <input class="" type="number" name="" placeholder="2">
           </label>
           <button class="btn" type="submit">Найти</button> 
 <!--      Только вот кнопка по идее должна стать ссылкой.  Сделать ссылкой сразу? Или JS сам потом перенаправит "скрыто" от кнопки?     -->
