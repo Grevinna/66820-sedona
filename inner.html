@@ -27,7 +27,112 @@
 			</nav>	
     </header>
     <main>
-  
+      <section>
+			<b>Фильтр:</b>
+				<form action="form.php" method="GET">
+					<h3>Инфраструктура:</h3>
+					<div class="">
+						<input type="checkbox" id="ch1" value="" name="" checked>
+						<label for="ch1">Бассейн</label>
+						<input type="checkbox" id="ch2" value="" name="">
+						<label for="ch2">Парковка</label>
+						<input type="checkbox" id="ch3" value="" name="">
+						<label for="ch3">Wi-fi</label>
+					</div>
+					<h3>Тип жилья:</h3>
+					<div class="">
+						<input type="checkbox" id="ch1" value="" name="" checked>
+						<label for="ch1">Гостиница</label>
+						<input type="checkbox" id="ch2" value="" name="" checked>
+						<label for="ch2">Мотель</label>
+						<input type="checkbox" id="ch3" value="" name="" checked>
+						<label for="ch3">Апартаменты</label>
+					</div>
+					<h3>Стоимость в сутки (р):</h3>
+					<div class="range-filter">
+						<div class="price-controls">
+							<label class="min-price"><input name="min-price" type="text" value="0"></label>
+							<label class="max-price">	&#8212;<input name="max-price" type="text" value="3000"></label>
+						</div>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
+					</div>				
+					<div class="btn-filter">
+						<input type="submit" value="Показать">
+					</div>
+				</form>
+			</section>
+			<section class="sorting">
+				<div class="sorting-tool">
+					<b>Сортировка:</b><!-- не совсем понимаю через что это делать... чекбоксы, если только стилизованные... или из этого можно как-то продожить... -->
+					<form class="sorting-item">
+						<label class="price">
+							<input type="radio"  value="price" name="sorting-item" checked>По цене
+						</label>
+						<label class="type"> 
+							<input type="radio"  value="type" name="sorting-item">По типу
+						</label>
+						<label class="rating"> 
+							<input type="radio"  value="rating" name="sorting-item">По рейтингу
+						</label>
+					</form>
+					<form class="arrow-sorting">
+						<input class="arrow arrow-up" type="radio" id="a-r1" value="arrow-up" name="arrow" checked>
+						<label for="a-r1"></label>
+						<input class="arrow arrow-down" type="radio" id="a-r2" value="arrow-down" name="arrow">
+						<label for="a-r2"></label>
+					</form>
+				</div>
+			</section>
+			<section>
+				<div class="">
+					<img src="img/Amara-resort.png" width="89" height="17" alt="Amara resort">
+					<div class="">
+						<h2>Amara resort + spa</h2>
+						<div>Гостиница</div>
+						<div>от 3500 р.</div>
+						<a>Подробнее</a>
+						<a>Забронировать</a>
+				  </div>
+					<div>
+					  <img src="img/star-four.png" width="89" height="17" alt="star-four">
+						<span>Рейтинг: 8,5</span>
+					</div>
+				</div>
+				<div class="">
+					<img src="img/Desert-quail-inn.png" width="135" height="90" alt="Desert Quail inn">
+					<div class="">
+						<h2>Desert Quail inn</h2>
+						<div>Мотель</div>
+						<div>от 2000 р.</div>
+						<a>Подробнее</a>
+						<a>Забронировать</a>
+				  </div>
+					<div>
+					  <img src="img/star-two.png" width="42" height="17" alt="star-two">
+						<span>Рейтинг: 8,9</span>
+					</div>
+				</div>
+				<div class="">
+					<img src="img/Villas-at-Poco-Diablo.png" width="135" height="90" alt="Villas at Poco Diablo">
+					<div class="">
+						<h2>Villas at Poco Diablo</h2>
+						<div>Апартаменты</div>
+						<div>от 4000 р.</div>
+						<a>Подробнее</a>
+						<a>Забронировать</a>
+				  </div>
+					<div>
+					  <img src="img/star-three.png" width="65" height="17" alt="star-three">
+						<span>Рейтинг: 9,2</span>
+					</div>
+				</div>
+			</section>
     </main>
     <footer>
       <section>
