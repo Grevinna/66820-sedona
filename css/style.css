@@ -58,6 +58,222 @@ h2 {
 
 /* .sprite */
 
+.sprite {
+    background-image: url(//img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Youtube {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-Youtube-blue {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -31px;
+}
+
+.sprite-arrow-down-black {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -57px;
+}
+
+.sprite-arrow-down-black-_-_____ {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -77px;
+}
+
+.sprite-arrow-down-blue {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -97px;
+}
+
+.sprite-arrow-down-blue-_-_____ {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -117px;
+}
+
+.sprite-arrow-down-gray {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -137px;
+}
+
+.sprite-arrow-down-gray-_-_____ {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -157px;
+}
+
+.sprite-arrow-up-black {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -177px;
+}
+
+.sprite-arrow-up-black-_-_____ {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -197px;
+}
+
+.sprite-arrow-up-blue {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -217px;
+}
+
+.sprite-arrow-up-blue-_-_____ {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -237px;
+}
+
+.sprite-arrow-up-gray {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -257px;
+}
+
+.sprite-arrow-up-gray-_-_____ {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -277px;
+}
+
+.sprite-calendar-black {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -297px;
+}
+
+.sprite-calendar-blue {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -329px;
+}
+
+.sprite-calendar-blue-_-_____ {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -361px;
+}
+
+.sprite-calendar-gray {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -393px;
+}
+
+.sprite-calendar-gray-_-_____ {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -425px;
+}
+
+.sprite-checkbox {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -457px;
+}
+
+.sprite-checkbox-_-_____ {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -489px;
+}
+
+.sprite-checkbox-checked {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -521px;
+}
+
+.sprite-checkbox-checked-_-_____ {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -553px;
+}
+
+.sprite-checkbox-checked-gray {
+    width: 26px;
+    height: 22px;
+    background-position: -5px -585px;
+}
+
+.sprite-checkbox-gray {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -617px;
+}
+
+.sprite-facebook {
+    width: 10px;
+    height: 19px;
+    background-position: -5px -649px;
+}
+
+.sprite-facebook-blue {
+    width: 10px;
+    height: 19px;
+    background-position: -5px -678px;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -5px -707px;
+}
+
+.sprite-housing {
+    width: 75px;
+    height: 72px;
+    background-position: -5px -787px;
+}
+
+.sprite-html-academy-black {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -869px;
+}
+
+.sprite-html-academy-blue {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -918px;
+}
+
+.sprite-html-academy-gray {
+    width: 113px;
+    height: 39px;
+    background-position: -5px -967px;
+}
+
+.sprite-souvenirs {
+    width: 64px;
+    height: 76px;
+    background-position: -5px -1016px;
+}
+
+.sprite-twitter {
+    width: 17px;
+    height: 15px;
+    background-position: -5px -1102px;
+}
+
+.sprite-twitter-blue {
+    width: 17px;
+    height: 15px;
+    background-position: -5px -1127px;
+}
+
 
 
 
