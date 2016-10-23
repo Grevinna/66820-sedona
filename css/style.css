@@ -1,0 +1,63 @@
+/*
+Папка для стилевых файлов.
+
+--
+
+Пример структуры файлов:
+
+css/
+| - style.css
+| - normalize.css
+| - [другие *.css файлы]
+*/
+
+
+
+
+body {
+  font-size: 12px;
+  line-height: 1;
+  color: black;
+  font-weight: normal;
+  font-family: "PT Sans", "Myriad Pro", sans-serif;
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 16px;
+  color:  #000000;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sprite */
+
+
+
+
