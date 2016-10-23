@@ -11,44 +11,43 @@
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
 						<li class="main-navigation-item">
-							<a>Информация</a>
+							<a class="main-navigation-link">Информация</a>
 						</li>  
 						<li class="main-navigation-item">
-							<a>Фото и видео</a>
+							<a class="main-navigation-link">Фото и видео</a>
 						</li> 
 						<li class="main-navigation-item">
-							<a>Карта штата</a>
+							<a class="main-navigation-link">Карта штата</a>
 						</li> 
 						<li class="main-navigation-item">
-							<a>Гостиницы</a>
+							<a class="main-navigation-link">Гостиницы</a>
 						</li> 
 					</ul>  
 				</nav>	
 			</header>
 			<main>
-				<section>
-				<b>Фильтр:</b>
-					<form action="form.php" method="GET">
-						<h3>Инфраструктура:</h3>
-						<div class="">
-							<input type="checkbox" id="ch1" value="" name="" checked>
-							<label for="ch1">Бассейн</label>
-							<input type="checkbox" id="ch2" value="" name="">
-							<label for="ch2">Парковка</label>
-							<input type="checkbox" id="ch3" value="" name="">
-							<label for="ch3">Wi-fi</label>
+				<section class="filter-container">
+					<form class="filter"action="form.php" method="GET">
+						<div class="filter-block infrastructure">
+							<h3 class="filter-titel">Инфраструктура:</h3>
+							<input type="checkbox" id="ch1-infrastructure" value="бассейн" name="infrastructure-input" checked>
+							<label for="ch1-infrastructure">Бассейн</label>
+							<input type="checkbox" id="ch2-infrastructure" value="парковка" name="infrastructure-input">
+							<label for="ch2-infrastructure">Парковка</label>
+							<input type="checkbox" id="ch3-infrastructure" value="wi-fi" name="infrastructure-input">
+							<label for="ch3-infrastructure">Wi-fi</label>
 						</div>
-						<h3>Тип жилья:</h3>
-						<div class="">
-							<input type="checkbox" id="ch1" value="" name="" checked>
-							<label for="ch1">Гостиница</label>
-							<input type="checkbox" id="ch2" value="" name="" checked>
-							<label for="ch2">Мотель</label>
-							<input type="checkbox" id="ch3" value="" name="" checked>
-							<label for="ch3">Апартаменты</label>
+						<div class="filter-block property-type">
+							<h3 class="filter-titel">Тип жилья:</h3>
+							<input type="checkbox" id="ch1-property-type" value="гостиница" name="property-type-input" checked>
+							<label for="ch1-property-type">Гостиница</label>
+							<input type="checkbox" id="ch2-property-type" value="мотель" name="property-type-input" checked>
+							<label for="ch2-property-type">Мотель</label>
+							<input type="checkbox" id="ch3-property-type" value="апартаменты" name="property-type-input" checked>
+							<label for="ch3-property-type">Апартаменты</label>
 						</div>
-						<h3>Стоимость в сутки (р):</h3>
-						<div class="range-filter">
+						<div class="filter-range">
+							<h3 class="filter-titel">Стоимость в сутки (р):</h3>
 							<div class="price-controls">
 								<label class="min-price"><input name="min-price" type="text" value="0"></label>
 								<label class="max-price">	&#8212;<input name="max-price" type="text" value="3000"></label>
@@ -67,86 +66,89 @@
 					</form>
 				</section>
 				<section class="sorting">
+					<div class="sorting-result">Найдено:3</div>
+<!--		В 	sorting-result  может правильнее цифру 3 вынести в отдельный блок, чтобы в перспективе там отображать настоящее число, найденных объектов?		-->
 					<div class="sorting-tool">
-						<b>Сортировка:</b><!-- не совсем понимаю через что это делать... чекбоксы, если только стилизованные... или из этого можно как-то продожить... -->
-						<form class="sorting-item">
-							<label class="price">
-								<input type="radio"  value="price" name="sorting-item" checked>По цене
-							</label>
-							<label class="type"> 
-								<input type="radio"  value="type" name="sorting-item">По типу
-							</label>
-							<label class="rating"> 
-								<input type="radio"  value="rating" name="sorting-item">По рейтингу
-							</label>
-						</form>
+						<h5 class="sorting-titel">Сортировка:</h5>
+						<a class="sorting-item sorting-price">По цене</a>
+						<a class="sorting-item sorting-type">По типу</a>
+						<a class="sorting-item sorting-rating">По рейтингу</a>
 						<form class="arrow-sorting">
-							<input class="arrow arrow-up" type="radio" id="a-r1" value="arrow-up" name="arrow" checked>
+							<input class="arrow arrow-up" type="radio" id="a-r1" value="arrow-up" name="arrow">
 							<label for="a-r1"></label>
-							<input class="arrow arrow-down" type="radio" id="a-r2" value="arrow-down" name="arrow">
+							<input class="arrow arrow-down" type="radio" id="a-r2" value="arrow-down" name="arrow" checked>
 							<label for="a-r2"></label>
 						</form>
+<!--			.arrow-sorting оставить формой? или требуется другая реализация?			-->
 					</div>
 				</section>
-				<section>
-					<div class="">
-						<img src="img/Amara-resort.png" width="89" height="17" alt="Amara resort">
-						<div class="">
-							<h2>Amara resort + spa</h2>
-							<div>Гостиница</div>
-							<div>от 3500 р.</div>
-							<a>Подробнее</a>
-							<a>Забронировать</a>
+				<section class="found">
+					<div class="found-item">
+						<div class="found-item-img">
+						  <img src="img/Amara-resort.png" width="89" height="17" alt="Amara resort">
 						</div>
-						<div>
-							<img src="img/star-four.png" width="89" height="17" alt="star-four">
-							<span>Рейтинг: 8,5</span>
+						<div class="found-item-block">
+							<h2 class="found-item-titel">Amara resort + spa</h2>
+							<div class="found-item-type">Гостиница</div>
+							<div class="found-item-price">от 3500 р.</div>
+							<a class="found-item-btn-more">Подробнее</a>
+							<a class="found-item-btn-reserve">Забронировать</a>
 						</div>
-					</div>
-					<div class="">
-						<img src="img/Desert-quail-inn.png" width="135" height="90" alt="Desert Quail inn">
-						<div class="">
-							<h2>Desert Quail inn</h2>
-							<div>Мотель</div>
-							<div>от 2000 р.</div>
-							<a>Подробнее</a>
-							<a>Забронировать</a>
-						</div>
-						<div>
-							<img src="img/star-two.png" width="42" height="17" alt="star-two">
-							<span>Рейтинг: 8,9</span>
+						<div class="found-item-rating">
+							<img class="found-item-rating-img" src="img/star-four.png" width="89" height="17" alt="star-four">
+							<span class="found-item-rating-value">Рейтинг: 8,5</span>
 						</div>
 					</div>
-					<div class="">
-						<img src="img/Villas-at-Poco-Diablo.png" width="135" height="90" alt="Villas at Poco Diablo">
-						<div class="">
-							<h2>Villas at Poco Diablo</h2>
-							<div>Апартаменты</div>
-							<div>от 4000 р.</div>
-							<a>Подробнее</a>
-							<a>Забронировать</a>
+					<div class="found-item">
+						<div class="found-item-img">
+						  <img src="img/Desert-quail-inn.png" width="135" height="90" alt="Desert Quail inn">
 						</div>
-						<div>
-							<img src="img/star-three.png" width="65" height="17" alt="star-three">
-							<span>Рейтинг: 9,2</span>
+						<div class="found-item-block">
+							<h2 class="found-item-titel">Desert Quail inn</h2>
+							<div class="found-item-type">Мотель</div>
+							<div class="found-item-price">от 2000 р.</div>
+							<a class="found-item-btn-more">Подробнее</a>
+							<a class="found-item-btn-reserve">Забронировать</a>
+						</div>
+						<div class="found-item-rating">
+							<img class="found-item-rating-img" src="img/star-two.png" width="42" height="17" alt="star-two">
+							<span class="found-item-rating-value">Рейтинг: 8,9</span>
+						</div>
+					</div>
+					<div class="found-item">
+						<div class="found-item-img">
+						  <img src="img/Villas-at-Poco-Diablo.png" width="135" height="90" alt="Villas at Poco Diablo">
+						</div>
+						<div class="found-item-block">
+							<h2 class="found-item-titel">Villas at Poco Diablo</h2>
+							<div class="found-item-type">Апартаменты</div>
+							<div class="found-item-price">от 4000 р.</div>
+							<a class="found-item-btn-more">Подробнее</a>
+							<a class="found-item-btn-reserve">Забронировать</a>
+						</div>
+						<div class="found-item-rating">
+							<img class="found-item-rating-img" src="img/star-three.png" width="65" height="17" alt="star-three">
+							<span class="found-item-rating-value">Рейтинг: 9,2</span>
 						</div>
 					</div>
 				</section>
 			</main>
 			<footer>
-				<section>
-					<a>#VisitSedona</a> 
+				<section class="hashtag">
+					<a class="hashtag-link">#VisitSedona</a> 
 				</section>
 				<section class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">Твиттер</a>
 					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 					<a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
 				</section>
-				<section>
-					<a>Website by</a>
+				<section class="Website-author">
+					<a class="Website-author-link">Website by</a>
 	<!--   <img src="img/html-academy-black.png" width="113" height="39" alt="htmlacademy"> вставить при помощи before в CSS     -->
 				</section>
 			</footer>
 	  </div>
   </body>
 </html>
+
+<!--  Да, Евгений! Как же ты прав! Надо было по ходу классы задавать, а не оставлять время не "подумать, как же его точечно и емко назвать", лучше от этого не стало, а только работы прибавилось.... Наверное лучший способ научиться задавать емкие и короткие названия - это брать десяток макетов и пытаться сделать это... Но как же сложно дать первичное название блоку! Это - боль ))) -->
