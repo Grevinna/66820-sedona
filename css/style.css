@@ -69,213 +69,152 @@ h2 {
 .sprite-Youtube {
     width: 20px;
     height: 16px;
-    background-position: -5px -5px;
+    background-position: -10px -10px;
 }
 
 .sprite-Youtube-blue {
     width: 20px;
     height: 16px;
-    background-position: -5px -31px;
+    background-position: -10px -46px;
 }
 
 .sprite-arrow-down-black {
     width: 11px;
     height: 10px;
-    background-position: -5px -57px;
-}
-
-.sprite-arrow-down-black-_-_____ {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -77px;
+    background-position: -10px -82px;
 }
 
 .sprite-arrow-down-blue {
     width: 11px;
     height: 10px;
-    background-position: -5px -97px;
-}
-
-.sprite-arrow-down-blue-_-_____ {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -117px;
+    background-position: -10px -112px;
 }
 
 .sprite-arrow-down-gray {
     width: 11px;
     height: 10px;
-    background-position: -5px -137px;
-}
-
-.sprite-arrow-down-gray-_-_____ {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -157px;
+    background-position: -10px -142px;
 }
 
 .sprite-arrow-up-black {
     width: 11px;
     height: 10px;
-    background-position: -5px -177px;
-}
-
-.sprite-arrow-up-black-_-_____ {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -197px;
+    background-position: -10px -172px;
 }
 
 .sprite-arrow-up-blue {
     width: 11px;
     height: 10px;
-    background-position: -5px -217px;
-}
-
-.sprite-arrow-up-blue-_-_____ {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -237px;
+    background-position: -10px -202px;
 }
 
 .sprite-arrow-up-gray {
     width: 11px;
     height: 10px;
-    background-position: -5px -257px;
-}
-
-.sprite-arrow-up-gray-_-_____ {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -277px;
+    background-position: -10px -232px;
 }
 
 .sprite-calendar-black {
     width: 21px;
     height: 22px;
-    background-position: -5px -297px;
+    background-position: -10px -262px;
 }
 
 .sprite-calendar-blue {
     width: 21px;
     height: 22px;
-    background-position: -5px -329px;
-}
-
-.sprite-calendar-blue-_-_____ {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -361px;
+    background-position: -10px -304px;
 }
 
 .sprite-calendar-gray {
     width: 21px;
     height: 22px;
-    background-position: -5px -393px;
-}
-
-.sprite-calendar-gray-_-_____ {
-    width: 21px;
-    height: 22px;
-    background-position: -5px -425px;
+    background-position: -10px -346px;
 }
 
 .sprite-checkbox {
     width: 22px;
     height: 22px;
-    background-position: -5px -457px;
-}
-
-.sprite-checkbox-_-_____ {
-    width: 22px;
-    height: 22px;
-    background-position: -5px -489px;
+    background-position: -10px -388px;
 }
 
 .sprite-checkbox-checked {
     width: 26px;
     height: 22px;
-    background-position: -5px -521px;
-}
-
-.sprite-checkbox-checked-_-_____ {
-    width: 26px;
-    height: 22px;
-    background-position: -5px -553px;
+    background-position: -10px -430px;
 }
 
 .sprite-checkbox-checked-gray {
     width: 26px;
     height: 22px;
-    background-position: -5px -585px;
+    background-position: -10px -472px;
 }
 
 .sprite-checkbox-gray {
     width: 22px;
     height: 22px;
-    background-position: -5px -617px;
+    background-position: -10px -514px;
 }
 
 .sprite-facebook {
     width: 10px;
     height: 19px;
-    background-position: -5px -649px;
+    background-position: -10px -556px;
 }
 
 .sprite-facebook-blue {
     width: 10px;
     height: 19px;
-    background-position: -5px -678px;
+    background-position: -10px -595px;
 }
 
 .sprite-food {
     width: 74px;
     height: 70px;
-    background-position: -5px -707px;
+    background-position: -10px -634px;
 }
 
 .sprite-housing {
     width: 75px;
     height: 72px;
-    background-position: -5px -787px;
+    background-position: -10px -724px;
 }
 
 .sprite-html-academy-black {
     width: 113px;
     height: 39px;
-    background-position: -5px -869px;
+    background-position: -10px -816px;
 }
 
 .sprite-html-academy-blue {
     width: 113px;
     height: 39px;
-    background-position: -5px -918px;
+    background-position: -10px -875px;
 }
 
 .sprite-html-academy-gray {
     width: 113px;
     height: 39px;
-    background-position: -5px -967px;
+    background-position: -10px -934px;
 }
 
 .sprite-souvenirs {
     width: 64px;
     height: 76px;
-    background-position: -5px -1016px;
+    background-position: -10px -993px;
 }
 
 .sprite-twitter {
     width: 17px;
     height: 15px;
-    background-position: -5px -1102px;
+    background-position: -10px -1089px;
 }
 
 .sprite-twitter-blue {
     width: 17px;
     height: 15px;
-    background-position: -5px -1127px;
+    background-position: -10px -1124px;
 }
-
 
 
 
