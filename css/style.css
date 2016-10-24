@@ -42,7 +42,61 @@ h2 {
 
 
 
+.general-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	
+	width: 100%;
+	min-width: 768px;
+	max-width: 1200px;
+	
+	box-shadow: 11px 0 10px -10px #dbdbdb,
+		          -11px 0 10px -10px #dbdbdb,
+		          500px 0 0 0 #f2f2f2,
+		          -500px 0 0 0 #f2f2f2;
+}
 
+.basic-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+
+.main-container {
+	
+}
+
+.footer-container {
+	
+}
+
+
+/*   header   */
+
+.header-container {
+	position: relative;
+	height: 56px
+}
+
+.main-navigation-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.main-navigation-item {
+	list-style-type: none;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 0%;
+}
 
 
 
