@@ -8,8 +8,8 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-		<div class="general-container">
-			<header class="header-container">
+		<div class="container">
+			<header class="header">
 				<a class="logo" href="index.html"><img src="img/logo-blue.png" width="138" height="70" alt="logo"></a>
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
@@ -28,11 +28,11 @@
 					</ul>  
 				</nav>	
 			</header>
-			<main class="main-container">
+			<main class="main">
 				<section class="filter-container">
 					<form class="filter" action="form.php" method="GET">
 						<div class="filter-block infrastructure">
-							<h3 class="filter-titel">Инфраструктура:</h3>
+							<h3 class="filter-title">Инфраструктура:</h3>
 							<input type="checkbox" id="ch1-infrastructure" value="бассейн" name="infrastructure-input" checked>
 							<label for="ch1-infrastructure">Бассейн</label>
 							<input type="checkbox" id="ch2-infrastructure" value="парковка" name="infrastructure-input">
@@ -41,7 +41,7 @@
 							<label for="ch3-infrastructure">Wi-fi</label>
 						</div>
 						<div class="filter-block property-type">
-							<h3 class="filter-titel">Тип жилья:</h3>
+							<h3 class="filter-title">Тип жилья:</h3>
 							<input type="checkbox" id="ch1-property-type" value="гостиница" name="property-type-input" checked>
 							<label for="ch1-property-type">Гостиница</label>
 							<input type="checkbox" id="ch2-property-type" value="мотель" name="property-type-input" checked>
@@ -50,7 +50,7 @@
 							<label for="ch3-property-type">Апартаменты</label>
 						</div>
 						<div class="filter-range">
-							<h3 class="filter-titel">Стоимость в сутки (р):</h3>
+							<h3 class="filter-title">Стоимость в сутки (р):</h3>
 							<div class="price-controls">
 								<label class="min-price"><input name="min-price" type="text" value="0"></label>
 								<label class="max-price">	&#8212;<input name="max-price" type="text" value="3000"></label>
@@ -64,25 +64,26 @@
 							<div class="toggle toggle-max"></div>
 						</div>				
 						<div class="btn-filter">
-							<input type="submit" value="Показать">
+							<input class="btn-filter-show" type="submit" value="Показать">
 						</div>
 					</form>
 				</section>
 				<section class="sorting">
-					<div class="sorting-result">Найдено:3</div>
-<!--		В 	sorting-result  может правильнее цифру 3 вынести в отдельный блок, чтобы в перспективе там отображать настоящее число, найденных объектов?	Или это лишнее?	-->
+					<div class="sorting-result">
+						Найдено:
+						<span class="sorting-result-number" id="sorting-result-number">3</span>
+					</div>
 					<div class="sorting-tool">
-						<h5 class="sorting-titel">Сортировка:</h5>
-						<a class="sorting-item sorting-price">По цене</a>
-						<a class="sorting-item sorting-type">По типу</a>
-						<a class="sorting-item sorting-rating">По рейтингу</a>
-						<form class="arrow-sorting">
-							<input class="arrow arrow-up" type="radio" id="a-r1" value="arrow-up" name="arrow">
-							<label for="a-r1"></label>
-							<input class="arrow arrow-down" type="radio" id="a-r2" value="arrow-down" name="arrow" checked>
-							<label for="a-r2"></label>
-						</form>
-<!--			.arrow-sorting оставить формой? или требуется другая реализация?			-->
+						<h5 class="sorting-title">Сортировка:</h5>
+						<div class="sorting-variety">
+							<a class="sorting-item sorting-price" href="#.html">По цене</a>
+							<a class="sorting-item sorting-type" href="#.html">По типу</a>
+							<a class="sorting-item sorting-rating" href="#.html">По рейтингу</a>
+						</div>
+						<div class="sorting-direction">
+							<a class="arrow arrow-up" href="#.html"></a>
+							<a class="arrow arrow-down" href="#.html"></a>
+						</div>
 					</div>
 				</section>
 				<section class="found">
@@ -91,14 +92,23 @@
 						  <img src="img/Amara-resort.png" width="89" height="17" alt="Amara resort">
 						</div>
 						<div class="found-block">
-							<a class="found-titel">Amara resort + spa</a>
+							<h2 class="found-title">
+							  <a href="#.html">Amara resort + spa</a>
+							</h2>
 							<div class="found-type">Гостиница</div>
 							<div class="found-price">от 3500 р.</div>
-							<a class="found-btn found-btn-more">Подробнее</a>
-							<a class="found-btn found-btn-reserve">Забронировать</a>
+							<a class="found-btn found-btn-more" href="#.html">Подробнее</a>
+							<a class="found-btn found-btn-reserve" href="#.html">Забронировать</a>
 						</div>
 						<div class="found-rating">
-							<img class="found-rating-img" src="img/star-four.png" width="89" height="17" alt="star-four">
+<!--							<img class="found-rating-img" src="img/star-four.png" width="89" height="17" alt="star-four">
+
+"вместо img здесь лучше поставить див. Это все-таки больше декоративный элемент. назови его просто rating. И... дальше модификаторы;)" 
+
+хммм... фоном потом? 
+
+-->
+							<div class="found-rating-img"></div>
 							<span class="found-rating-value">Рейтинг: 8,5</span>
 						</div>
 					</div>
@@ -107,14 +117,17 @@
 						  <img src="img/Desert-quail-inn.png" width="135" height="90" alt="Desert Quail inn">
 						</div>
 						<div class="found-block">
-							<a class="found-titel">Desert Quail inn</a>
+							<div class="found-title">
+							  <a href="#.html">Desert Quail inn</a>
+							</div>
 							<div class="found-type">Мотель</div>
 							<div class="found-price">от 2000 р.</div>
-							<a class="found-btn found-btn-more">Подробнее</a>
-							<a class="found-btn found-btn-reserve">Забронировать</a>
+							<a class="found-btn found-btn-more" href="#.html">Подробнее</a>
+							<a class="found-btn found-btn-reserve" href="#.html">Забронировать</a>
 						</div>
 						<div class="found-rating">
-							<img class="found-rating-img" src="img/star-two.png" width="42" height="17" alt="star-two">
+<!--							<img class="found-rating-img" src="img/star-two.png" width="42" height="17" alt="star-two">-->
+							<div class="found-rating-img"></div>
 							<span class="found-rating-value">Рейтинг: 8,9</span>
 						</div>
 					</div>
@@ -123,22 +136,25 @@
 						  <img src="img/Villas-at-Poco-Diablo.png" width="135" height="90" alt="Villas at Poco Diablo">
 						</div>
 						<div class="found-block">
-							<a class="found-titel">Villas at Poco Diablo</a>
+							<div class="found-title">
+							  <a href="#.html">Villas at Poco Diablo</a>
+							</div>
 							<div class="found-type">Апартаменты</div>
 							<div class="found-price">от 4000 р.</div>
-							<a class="found-btn found-btn-more">Подробнее</a>
-							<a class="found-btn found-btn-reserve">Забронировать</a>
+							<a class="found-btn found-btn-more" href="#.html">Подробнее</a>
+							<a class="found-btn found-btn-reserve" href="#.html">Забронировать</a>
 						</div>
 						<div class="found-rating">
-							<img class="found-rating-img" src="img/star-three.png" width="65" height="17" alt="star-three">
+<!--							<img class="found-rating-img" src="img/star-three.png" width="65" height="17" alt="star-three">-->
+							<div class="found-rating-img"></div>
 							<span class="found-rating-value">Рейтинг: 9,2</span>
 						</div>
 					</div>
 				</section>
 			</main>
-			<footer class="footer-container">
+			<footer class="footer">
 				<section class="hashtag">
-					<a class="hashtag-link">#VisitSedona</a> 
+					<a class="hashtag-link" href="#.html">#VisitSedona</a> 
 				</section>
 				<section class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">Твиттер</a>
@@ -153,5 +169,3 @@
 	  </div>
   </body>
 </html>
-
-<!--  Да, Евгений! Как же ты прав! Надо было по ходу классы задавать, а не оставлять время не "подумать, как же его точечно и емко назвать", лучше от этого не стало, а только работы прибавилось.... Наверное лучший способ научиться задавать емкие и короткие названия - это брать десяток макетов и пытаться сделать это... Но как же сложно дать первичное название блоку! Это - боль ))) -->

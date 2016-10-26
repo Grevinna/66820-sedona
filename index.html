@@ -8,8 +8,8 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-		<div class="general-container">
-			<header class="header-container">
+		<div class="container">
+			<header class="header">
 				<a class="logo" href="index.html"><img src="img/logo-blue.png" width="138" height="70" alt="logo"></a>
 				<nav class="main-navigation">
 					<ul class="main-navigation-list">
@@ -28,7 +28,7 @@
 					</ul>  
 				</nav>	
 			</header>
-			<main class="main-container">
+			<main class="main">
 				<section class="welcome">
 					<img src="img/welcome.png" width="458" height="352" alt="welcome">
 				</section>
@@ -38,46 +38,50 @@
 						<p class="caption-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 					</div>
 					<div class="feature">
-						<h4 class="feature-title">Настоящий городок</h4>
-						<p class="feature-text">&mdash;№1&mdash;</p>
-						<p class="feature-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+						<div class="feature-info">
+							<h4 class="feature-title">Настоящий городок</h4>
+							<p class="feature-text">&mdash;№1&mdash;</p>
+							<p class="feature-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+						</div>
 						<img class="feature-img" src="img/town-1200.jpg" width="800" height="256" alt="town">
 					</div>
 					<div class="info">
-						<div class="info-item housing">
+						<div class="info-item info-item-housing">
 							<h4 class="info-title housing-title">Жилье</h4>
 							<p class="info-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 						</div>
-						<div class="info-item food">
+						<div class="info-item info-item-food">
 							<h4 class="info-title food-title">Еда</h4>
 							<p class="info-text">Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
 						</div>
-						<div class="info-item souvenirs">
+						<div class="info-item info-item-souvenirs">
 							<h4 class="info-title souvenirs-title">Сувениры</h4>
 							<p class="info-text">Не только китайского, но и местного производства!</p>
 						</div>
 					</div> 
-					<div class="feature-inverse">
-						<h4 class="feature-inverse-title">Там есть Мост Дьявола</h4>
-						<p class="feature-inverse-text">&mdash;№2&mdash;</p>
-						<p class="feature-inverse-text">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-						<img class="feature-inverse-img" src="img/devil-bridge-1200.jpg" width="800" height="256" alt="devil's-bridge">
+					<div class="feature feature-inverse">
+						<div class="feature-info">
+							<h4 class="feature-title">Там есть Мост Дьявола</h4>
+							<p class="feature-text">&mdash;№2&mdash;</p>
+							<p class="feature-text">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+						</div>
+						<img class="feature-img" src="img/devil-bridge-1200.jpg" width="800" height="256" alt="devil's-bridge">
 					</div>
-					<div class="info-gray">
-						<div class="info-gray-item">
-							<h4 class="info-gray-title">Небольшая площадь</h4>
-							<p class="info-gray-text">&mdash;№3&mdash;</p>
-							<p class="info-gray-text">Все достопримечательности находятся оччень близко</p>
+					<div class="info info-gray">
+						<div class="info-item">
+							<h4 class="info-title">Небольшая площадь</h4>
+							<p class="info-text">&mdash;№3&mdash;</p>
+							<p class="info-text">Все достопримечательности находятся оччень близко</p>
 						</div>
-						<div class="info-gray-item">
-							<h4 class="info-gray-title">Красивая дорога</h4>
-							<p class="info-gray-text">&mdash;№4&mdash;</p>
-							<p class="info-gray-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						<div class="info-item">
+							<h4 class="info-title">Красивая дорога</h4>
+							<p class="info-text">&mdash;№4&mdash;</p>
+							<p class="info-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</div>
-						<div class="info-gray-item">
-							<h4 class="info-gray-title">Мало туристов</h4>
-							<p class="info-gray-text">&mdash;№5&mdash;</p>
-							<p class="info-gray-text">Большинство едет в Гранд Каньон и толпится там</p>
+						<div class="info-item">
+							<h4 class="info-title">Мало туристов</h4>
+							<p class="info-text">&mdash;№5&mdash;</p>
+							<p class="info-text">Большинство едет в Гранд Каньон и толпится там</p>
 						</div>
 					</div>
 				</section>
@@ -111,9 +115,9 @@
 			<section class="map">
 				<img class="map-content" src="img/map-1200.jpg" width="1200" height="593" alt="map"> 
 			</section>
-			<footer class="footer-container">
+			<footer class="footer">
 				<section class="hashtag">
-					<a class="hashtag-link">#VisitSedona</a> 
+					<a class="hashtag-link" href="#.html">#VisitSedona</a> 
 				</section>
 				<section class="footer-social">
 					<a class="social-btn social-btn-tw" href="#">Твиттер</a>
@@ -121,14 +125,10 @@
 					<a class="social-btn social-btn-youtube" href="#">Ютьюб</a>
 				</section>
 				<section class="Website-author">
-					<a class="Website-author-link">Website by</a>
+					<a class="Website-author-link" href="#.html">Website by</a>
 	<!--   <img src="img/html-academy-black.png" width="113" height="39" alt="htmlacademy"> вставить при помощи before в CSS     -->
 				</section>
 			</footer>
 		</div>
   </body>
 </html>
-
-<!--   Я сейчас поиграю в Кепа (причем, возможно, еще и в ошибающегося): по идее тень от всего сайта идет равномерно и мы могли не задавать общий контейнер, а задать каждому крупному блоку (мейну, хедеру и футеру один доп класс, который и стилизовали бы тенью, центровали. Я понимаю, что это более геморройный способ, но так мы избавляемся от "лишнего" тега в ХТМЛ. С точки зрения "прогрессивного улучшения" это могло бы быть правильным? -->
-
-
