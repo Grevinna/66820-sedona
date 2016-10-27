@@ -133,8 +133,56 @@ h2 {
 
 
 .main {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+/*   welcome   */
+
+.welcome {
+	background-image:
+		url("../img/mask-1200.png"),
+	  url("../img/background-photo-1200.jpg");
+	background-size: 
+		100%,
+		100% auto; 
+	background-repeat: no-repeat;
+	background-position: 
+		center bottom,
+		center -58px;
+	text-align: center;
+	min-height: 508px;
+}
+	
+/*
+	
+	на 768 не соответствует px, т.к. сами кортинки изначально по-разному вырезанны
+	
+	Как избавиться от полосы прокрутки?
+	
+	Не очень как-то получается у меня:
+	
+	или 1200 нормально работает -
+	
+	background-position: 
+		center bottom,
+		center -58px;
+	
+	или 768 - center top;
+	
+  явно где-то принципиально не правильно сделала, а вот где... 
+	
+*/
+	
+.welcome img {
+	margin-top: 76px;
+	margin-bottom: 80px;
+}
+
+
+
+
 
 
 
