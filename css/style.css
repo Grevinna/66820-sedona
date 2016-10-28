@@ -153,6 +153,7 @@ h2 {
 		center -58px;
 	text-align: center;
 	min-height: 508px;
+	margin-bottom: 40px;
 }
 	
 /*
@@ -179,6 +180,193 @@ h2 {
 	margin-top: 76px;
 	margin-bottom: 80px;
 }
+
+/*  content  */
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	text-transform: uppercase;
+}
+
+/*  caption  */
+
+.caption {
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.caption-title {
+	font-size: 21px;
+  line-height: 26px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.caption-text {
+	font-size: 14px;
+  line-height: 26px;
+}
+
+/*  feature  */
+
+.feature {
+	display: flex;
+}
+
+.feature-inverse {
+	flex-direction: row-reverse;
+}
+
+.feature-info {
+	width: 23%;
+	text-align: center;
+	background-color: #81b3d2;
+	color: #ffffff;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.feature-title, .info-title {
+	font-size: 21px;
+  line-height: 21px;
+	font-weight: 700;
+}
+
+.feature-title {
+	margin-top: 55px;
+}
+
+.feature-text, .info-text {
+	font-size: 14px;
+  line-height: 21px;
+}
+
+/*  Проблемы с переносом  */
+
+/*  И картинки как-то криво совсем, если background-ом вставлять, а вот картинками так и не догадалась как вставить, чтобы они тянулись  */
+
+.feature-img {
+	width: 67%;
+	background-image: url("../img/town.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 255px;
+}
+
+.feature-inverse-img {
+	width: 67%;
+	background-image: url("../img/devil-bridge.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 255px;
+}
+
+/*  info  */
+
+.info {
+	display: flex;
+	min-height: 330px;
+}
+
+.info-gray {
+	background-color: #eeeeee;
+	min-height: 256px;
+}
+
+.info-item {
+	width: 33%;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.info-title {
+	display: inline-block;
+	position: relative;
+	margin-top: 50px;
+}
+
+.housing-title, .food-title, .souvenirs-title {
+	margin-top: 165px;
+}
+
+.housing-title::before {
+  content: "";
+  position: absolute;
+  top: -310%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 72px;
+  background-position: -10px -724px;
+}
+
+.food-title::before {
+  content: "";
+  position: absolute;
+  top: -310%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 70px;
+  background-position: -10px -634px;
+}
+
+.souvenirs-title::before {
+  content: "";
+  position: absolute;
+  top: -310%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 76px;
+  background-position: -10px -993px;
+}
+
+
+/*   looking-hotel   */
+
+
+.looking-hotel {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.looking-hotel-title {
+	font-size: 30px;
+  line-height: 24px;
+	font-weight: 700;
+}
+
+.looking-hotel-text {
+	font-size: 14px;
+  line-height: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
