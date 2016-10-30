@@ -307,9 +307,9 @@ h2 {
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  width: 64px;
-  height: 76px;
-  background-position: -10px -993px;
+	width: 64px;
+	height: 76px;
+	background-position: -10px -1155px;
 }
 
 
@@ -353,6 +353,15 @@ h2 {
 	padding: 31px;
 }
 
+.form-link:hover {
+	background-color: #604e43;
+}
+
+.form-link:active {
+	background-color: #503e33;
+	color: #857871;
+}
+
 .form {
 	position: absolute;
 	display: block;
@@ -365,6 +374,7 @@ h2 {
 }
 
 .form label {
+	position: relative;
 	display: inline-block;
 	width: 100%;
 	margin-bottom: 30px;
@@ -382,6 +392,26 @@ h2 {
 	padding: 8px 13px; 
 	margin-left: 16px;
 }
+
+.form-input:hover {
+	background-color: #ebebeb;
+}
+
+.form-input:active {
+	background-color: #ffffff;
+	box-shadow: 2px 2px 0 0 #e5e5e5 inset;
+	border: 0px;
+}
+
+/*  Очень "странное" поведение в активном состоянии, судя по-всему его надо было задавать как-то иначе
+
+При клике- инпут вылетает из своего места в потоке
+
+Вместо бордера задала тень, но не помогло
+
+В инструментах разработчика причин не нашла (запуталась)
+*/
+
 
 label:nth-child(1) .form-input {
 	margin-left: 20px;
@@ -420,6 +450,100 @@ label:nth-child(3) .form-input {
    color: #000000;  
 }
 
+.arrival-date::before,
+.date-of-departure::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 22px;
+  background-position: -10px -346px;
+}
+
+.arrival-date:hover::before,
+.date-of-departure:hover::before {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -262px;
+}
+
+.arrival-date:active::before,
+.date-of-departure:active::before {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -304px;
+}
+
+.adults::before,
+.children::before {
+	content: "";
+  display: inline-block;
+	position: absolute;
+	top: 50%;
+  right: 82px;
+  transform:translate(-50%, -50%);
+	background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+	width: 12px;
+  height: 3px;
+  background-position: -10px -1039px;
+}
+
+.adults::before {
+	right: 135px;
+}
+
+.adults:hover::before,
+.children:hover::before {
+	width: 12px;
+	height: 3px;
+	background-position: -10px -993px;
+}
+
+.adults:active::before,
+.children:active::before {
+	width: 12px;
+  height: 3px;
+  background-position: -10px -1016px;
+}
+
+.adults::after,
+.children::after {
+	content: "";
+  display: inline-block;
+	position: absolute;
+	top: 50%;
+  right: 10px;
+  transform:translate(-50%, -50%);
+	background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+	width: 11px;
+	height: 11px;
+	background-position: -10px -1124px;
+}
+
+.adults::after {
+	right: 60px;
+}
+
+.adults:hover::after,
+.children:hover::after {
+	width: 11px;
+	height: 11px;
+	background-position: -10px -1062px;
+}
+
+.adults:active::before,
+.children:active::before {
+	width: 11px;
+	height: 11px;
+	background-position: -10px -1093px;
+}
+
 .form-btn {
 	display: block;
 	vertical-align: top;
@@ -436,22 +560,14 @@ label:nth-child(3) .form-input {
 	margin-top: 24px;
 }
 
+.form-btn:hover {
+	background-color: #669ec0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-btn:active {
+	background-color: #5496bd;
+	color: #88b6d1;
+}
 
 
 /*   map   */
@@ -464,28 +580,177 @@ background-image:
 	background-repeat: no-repeat;
 	background-position: 
 		center;
-	min-height: 475px;
+	min-height: 593px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*   footer   */
 
 
 
 .footer {
+	min-height: 120px;
+	font-family: inherit;
+	font-size: 14px;
+  line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #ffffff;
 	
 }
+
+.footer a {
+  text-decoration: none;
+	color: #000000;
+}
+
+.footer section {
+	display: inline-block;
+}
+
+.hashtag {
+	vertical-align: top;
+	text-align: center;
+	width: 33%;
+  font-size: 21px;
+	margin-top: 50px;
+}
+
+.footer-social {
+	vertical-align: top;
+	text-align: center;
+	width: 33%;
+}
+
+/*   social-btn   */
+
+.social-btn {
+  display: inline-block;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  margin: 36px 1px;
+  font-size: 0; /*  скрывает текст */
+  vertical-align: top;
+  text-decoration: none;
+  background-color: #81b3d2;
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+} 
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social-btn-tw::before {
+	width: 17px;
+	height: 15px;
+	background-position: -10px -1288px;
+}
+
+.social-btn-fb::before {
+	width: 10px;
+	height: 19px;
+	background-position: -10px -556px;
+}
+
+.social-btn-youtube::before {
+	width: 20px;
+	height: 16px;
+	background-position: -10px -10px;
+}
+
+.social-btn-fb:active::before {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -595px;
+}
+
+.social-btn-youtube:active::before{
+    width: 20px;
+    height: 16px;
+    background-position: -10px -46px;
+}
+
+.social-btn-tw:active::before {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -1323px;
+}
+
+/*   .website-author   */
+
+.website-author {
+  vertical-align: top;
+	text-align: center;
+	width: 33%;
+	margin-top: 40px;
+}
+
+.website-author-link {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	line-height: 38px;
+	width: 200px;
+	height: 41px;
+}
+
+.website-author-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left:140px;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -816px;
+}
+
+.website-author-link:hover::before {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -875px;
+}
+
+.website-author-link:active::before {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -934px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -638,23 +903,62 @@ background-image:
     background-position: -10px -934px;
 }
 
+.sprite-minus-black {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -993px;
+}
+
+.sprite-minus-blue {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1016px;
+}
+
+.sprite-minus-gray {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1039px;
+}
+
+.sprite-plus-black {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1062px;
+}
+
+.sprite-plus-blue {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1093px;
+}
+
+.sprite-plus-gray {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1124px;
+}
+
 .sprite-souvenirs {
     width: 64px;
     height: 76px;
-    background-position: -10px -993px;
+    background-position: -10px -1155px;
+}
+
+.sprite-star {
+    width: 18px;
+    height: 17px;
+    background-position: -10px -1251px;
 }
 
 .sprite-twitter {
     width: 17px;
     height: 15px;
-    background-position: -10px -1089px;
+    background-position: -10px -1288px;
 }
 
 .sprite-twitter-blue {
     width: 17px;
     height: 15px;
-    background-position: -10px -1124px;
+    background-position: -10px -1323px;
 }
-
-
-
