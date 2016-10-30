@@ -156,26 +156,6 @@ h2 {
 	margin-bottom: 40px;
 }
 	
-/*
-	
-	на 768 не соответствует px, т.к. сами кортинки изначально по-разному вырезанны
-	
-	Как избавиться от полосы прокрутки?
-	
-	Не очень как-то получается у меня:
-	
-	или 1200 нормально работает -
-	
-	background-position: 
-		center bottom,
-		center -58px;
-	
-	или 768 - center top;
-	
-  явно где-то принципиально не правильно сделала, а вот где... 
-	
-*/
-	
 .welcome img {
 	margin-top: 76px;
 	margin-bottom: 80px;
@@ -246,11 +226,9 @@ h2 {
 
 /*  Проблемы с переносом  */
 
-/*  И картинки как-то криво совсем, если background-ом вставлять, а вот картинками так и не догадалась как вставить, чтобы они тянулись  */
-
 .feature-img {
 	width: 67%;
-	background-image: url("../img/town.jpg");
+	background-image: url("../img/town-1200.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -259,7 +237,7 @@ h2 {
 
 .feature-inverse-img {
 	width: 67%;
-	background-image: url("../img/devil-bridge.jpg");
+	background-image: url("../img/devil-bridge-1200.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -339,6 +317,7 @@ h2 {
 
 
 .looking-hotel {
+	min-height: 291px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -347,6 +326,8 @@ h2 {
 	font-size: 30px;
   line-height: 24px;
 	font-weight: 700;
+	margin-top: 56px;
+	margin-bottom: 33px;
 }
 
 .looking-hotel-text {
@@ -354,6 +335,106 @@ h2 {
   line-height: 21px;
 }
 
+.form-container {
+	position: relative;
+	display: inline-block;
+	width: 568px;
+	margin-top: 34px;
+}
+
+.form-link {
+	display: block;
+	vertical-align: top;
+	font-size: 21px;
+  line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #766357;
+	padding: 31px;
+}
+
+.form {
+	position: absolute;
+	display: block;
+	vertical-align: top;
+	padding: 55px;
+	background-color: #ffffff;
+	font-size: 14px;
+  line-height: 21px;
+	font-weight: 700;
+}
+
+.form label {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.form-input {
+	width: 320px;
+	font-family: inherit;
+	font-size: 14px;
+  line-height: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	border: 0px;
+	padding: 8px 13px; 
+	margin-left: 16px;
+}
+
+label:nth-child(1) .form-input {
+	margin-left: 20px;
+}
+
+label:nth-child(3), 
+label:nth-child(4) {
+	width: auto;
+}
+
+label:nth-child(3) .form-input, 
+label:nth-child(4) .form-input {
+	width: 88px;
+	text-align: center;
+	margin-left: 22px;
+}
+
+label:nth-child(3) .form-input {
+	margin-left: 37px;
+	margin-right: 50px;
+}
+
+.form-input::-webkit-input-placeholder {
+   color: #000000;
+}
+
+.form-input:-moz-placeholder { /* Firefox 18- */
+   color: #000000;  
+}
+
+.form-input::-moz-placeholder {  /* Firefox 19+ */
+   color: #000000;  
+}
+
+.form-input:-ms-input-placeholder {  
+   color: #000000;  
+}
+
+.form-btn {
+	display: block;
+	vertical-align: top;
+	width: 100%;
+	font-family: inherit;
+	font-size: 21px;
+  line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #81b3d2;
+	padding: 17px;
+	border: 0px;
+	margin-top: 24px;
+}
 
 
 
@@ -362,6 +443,29 @@ h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*   map   */
+
+
+.map-content {
+background-image:
+	  url("../img/map-1200.jpg");
+	background-size: auto; 
+	background-repeat: no-repeat;
+	background-position: 
+		center;
+	min-height: 475px;
+}
 
 
 
