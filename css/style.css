@@ -144,6 +144,7 @@ h2 {
 	background-image:
 		url("../img/mask-1200.png"),
 	  url("../img/background-photo-1200.jpg");
+	background-color: #477ca6;
 	background-size: 
 		100%,
 		100% auto; 
@@ -414,6 +415,9 @@ h2 {
 Вместо бордера задала тень, но не помогло
 
 В инструментах разработчика причин не нашла (запуталась)
+
+Как-то отключить дополлнительно настройки брвузеров?
+
 */
 
 
@@ -735,22 +739,227 @@ background-image:
 }
 
 .website-author-link:hover::before {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -875px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -875px;
 }
 
 .website-author-link:active::before {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -934px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -934px;
 }
 
 
 
 
+/*    inner    */
 
 
+
+
+.filter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	
+	min-height: 218px;
+	margin-bottom: 50px;
+	
+	background-image: url("../img/filter-background-1200.jpg");
+	background-color: #477ca6;
+	background-size: 100% auto; 
+	background-repeat: no-repeat;
+	background-position: right center;
+	
+	color: #ffffff;
+	font-family: inherit;
+	font-size: 14px;
+  line-height: 26px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+.filter-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	width: ;
+}
+
+.filter-block input + label {
+  position: relative;
+  padding: 10px;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.filter-block input[type="checkbox"] {
+  display: none;
+}
+
+.filter-block input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  background-position: -10px -388px;
+}
+
+ .filter-block input[type="checkbox"]:checked + label::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+	width: 26px;
+	height: 22px;
+	background-position: -10px -430px;;
+}
+
+.filter-block input[type="checkbox"]:active + label::before {
+  width: 22px;
+  height: 22px;
+  background-position: -10px -514px;
+}
+
+.filter-block input[type="checkbox"]:active:checked + label::before {
+  width: 26px;
+  height: 22px;
+  background-position: -10px -472px;
+}
+
+
+
+
+.filter-range {
+
+}
+
+
+
+
+.btn-filter-show {
+  text-decoration: none;
+  text-transform: uppercase;
+	color: #ffffff;
+  padding: 10px 40px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 69px;
+}
+
+
+
+
+/*   sorting   */
+
+.sorting {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+	font-family: inherit;
+	font-size: 12px;
+  line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.sorting-result {
+	font-size: 21px;
+  line-height: 26px;
+	font-weight: 700;
+}
+
+.sorting-tool {
+  display: flex;
+  font-size: 13px;
+  line-height: 18px;
+	font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 10px 0px 5px 20px;
+  margin-bottom: 20px;
+}
+
+.sorting-title {
+	margin: 0px;
+}
+
+.sorting-tool .price { 
+  margin-right: 66px;
+}
+
+.sorting-tool .type {
+  margin-right: 62px;
+}
+
+.sorting-tool .functional {
+  margin-right: 47px;
+}
+
+.sorting-item {
+  text-decoration: none;
+}
+
+.sorting-item:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-item input:active {
+  color: #ee3643;
+  border-bottom: 0px;
+}
+
+
+/* .arrow */
+
+.arrow{
+ 
+}
+
+
+.arrow-up::before {
+ 
+}
+
+.arrow-down::before {
+  
+}
+
+.arrow-up:active::before {
+
+}
+
+.arrow-up:hover::before {
+  
+}
+
+.arrow-down:active::before {
+
+}
+
+.arrow-down:hover::before {
+  
+}
 
 
 
