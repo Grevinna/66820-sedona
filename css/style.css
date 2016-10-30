@@ -21,6 +21,7 @@ body {
   font-weight: normal;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
   background: #ffffff;
+	margin-top: 0px;
 }
 
 /*  "Myriad Pro"  добавила, так как он "высвечивался" при определенном наведении на поля форм, вот только не знаю - он стандартный или нет? И еще: вообще нужен ли он? Какой стандартный шрифт нужно задать, как "запасной"?   */
@@ -37,10 +38,7 @@ h2 {
   font-weight: normal;
 }
 
-
-
-
-
+/*   container   */
 
 .container {
 	display: flex;
@@ -140,6 +138,8 @@ h2 {
 
 /*   welcome   */
 
+/*   Проблемы с совпадением попиксельно фоновых изображений на разрешении 1200px  */
+
 .welcome {
 	background-image:
 		url("../img/mask-1200.png"),
@@ -150,7 +150,7 @@ h2 {
 	background-repeat: no-repeat;
 	background-position: 
 		center bottom,
-		center -58px;
+		right center;
 	text-align: center;
 	min-height: 508px;
 	margin-bottom: 40px;
@@ -222,16 +222,20 @@ h2 {
 .feature-text, .info-text {
 	font-size: 14px;
   line-height: 21px;
+	hyphens: auto;
+	-moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
-/*  Проблемы с переносом  */
+/*  Проблемы с переносом!!! Везде :(  */
 
 .feature-img {
 	width: 67%;
 	background-image: url("../img/town-1200.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center left;
 	min-height: 255px;
 }
 
@@ -600,6 +604,11 @@ background-image:
 	
 }
 
+.map + .footer {
+	opacity: 0.90;
+	margin-top: -120px;
+}
+
 .footer a {
   text-decoration: none;
 	color: #000000;
@@ -706,6 +715,8 @@ background-image:
 	text-align: left;
 	vertical-align: top;
 	line-height: 38px;
+	font-family: inherit;
+	font-weight: normal;
 	width: 200px;
 	height: 41px;
 }
