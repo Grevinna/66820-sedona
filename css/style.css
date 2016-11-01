@@ -751,21 +751,19 @@ background-image:
 }
 
 
-
-
 /*    inner    */
 
 
-
+/*   filter   */
 
 .filter {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	
+	justify-content: flex-start;
 	
 	min-height: 218px;
 	margin-bottom: 50px;
+	padding-left: 6%;
 	
 	background-image: url("../img/filter-background-1200.jpg");
 	background-color: #477ca6;
@@ -781,13 +779,23 @@ background-image:
 	text-transform: uppercase;
 }
 
-
 .filter-block {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: auto;
-	width: ;
+}
+
+.property-type {
+	margin-left: 10%;
+}
+
+.filter-range {	
+	margin-right: 6%;
+}
+
+.filter-title {
+	margin-top: 3px;
+	margin-bottom: 10px;
 }
 
 .filter-block input + label {
@@ -805,7 +813,7 @@ background-image:
   content: "";
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 10%;
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -818,7 +826,7 @@ background-image:
   content: "";
   position: absolute;
   top: 50%;
-  left: 6%;
+  left: 11%;
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -839,34 +847,144 @@ background-image:
   background-position: -10px -472px;
 }
 
-
-
+/*   filter-range   */
 
 .filter-range {
-
+  width: 29%;
+	max-width: 318px;
+	margin-top: 23px;
 }
 
+/*
 
+Этот заголовок смещен по-разному в макетах относительно ренжей
 
+Ползунок максимума находится в разных местах полосы в разных макетах
+
+это конечно можно попытаться подогнать, но стоит ли?
+
+*/
+
+.filter-range-title {
+	margin-top: 0px;
+  margin-bottom: 9px;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 25px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+	text-align: center;
+  cursor: pointer;
+}
+
+.min-price {
+	width: 30%;
+  padding-left: 42px;
+}
+
+.max-price {
+	width: 37%;
+  padding-left: 13%;
+}
+
+.price-controls input {
+	width: 68%;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.max-price input {
+	width: 72%;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  background: #1c4f80;
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  left: 70%;
+}
 
 .btn-filter-show {
-  text-decoration: none;
+  padding: 8px 34px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+	text-decoration: none;
   text-transform: uppercase;
 	color: #ffffff;
-  padding: 10px 40px;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   font-family: inherit;
   background-color: rgba(0, 0, 0, 0);
-  margin-top: 69px;
+  margin-top: 30px;
+	margin-left: 40px;
+	cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 
-
-
 /*   sorting   */
+
 
 .sorting {
 	display: flex;
@@ -961,7 +1079,9 @@ background-image:
   
 }
 
-
+:visited {
+	
+}
 
 
 
