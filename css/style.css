@@ -1141,13 +1141,100 @@ arrow-down{
 }
 
 
+/*   found   */
 
 
+.found {
+	
+}
 
+.found-item {
+	display: flex;
+	border-top: 1px solid #e5e5e5;
+}
 
+.found-item:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
 
+.found-img {
+	margin: 29px 35px 29px 45px;
+}
 
+.found-block {
+	width: 260px;
+	font-size: 14px;
+  line-height: 21px;
+	font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Myriad Pro", sans-serif;
+}
 
+.found-title a{
+	font-size: 21px;
+  line-height: 26px;
+	font-weight: 700;
+  text-align: left;
+	color: #000000;
+	text-decoration: none;
+}
+
+.found-type, 
+.found-price {
+	display: inline-block;
+}
+
+ 
+.found-type {
+	width: 115px;
+}
+
+.found-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	text-decoration: none;
+	font-family: inherit;
+	font-size: inherit;
+  line-height: inherit;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #81b3d2;
+	width: 70px;
+	padding: 5px 20px;
+	border: 0px;
+	margin-top: 24px;
+}
+
+.found-btn-more {
+	margin-right: 2px;
+}
+
+.found-btn-reserve {
+	background-color: #766357;
+	width: 100px;
+}
+
+.found-rating-img {
+	
+}
+
+.found-rating {
+	font-size: 14px;
+  line-height: 21px;
+	font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Myriad Pro", sans-serif;
+}
+
+.found-rating-value {
+	
+}
 
 
 
