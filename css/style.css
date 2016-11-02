@@ -763,7 +763,7 @@ background-image:
 	
 	min-height: 218px;
 	margin-bottom: 50px;
-	padding-left: 6%;
+	padding-left: 5%;
 	
 	background-image: url("../img/filter-background-1200.jpg");
 	background-color: #477ca6;
@@ -786,11 +786,7 @@ background-image:
 }
 
 .property-type {
-	margin-left: 10%;
-}
-
-.filter-range {	
-	margin-right: 6%;
+	margin-left: 13%;
 }
 
 .filter-title {
@@ -850,9 +846,12 @@ background-image:
 /*   filter-range   */
 
 .filter-range {
-  width: 29%;
+  width: 31.5%;
 	max-width: 318px;
+	min-width: 226px;
 	margin-top: 23px;
+	margin-left: 14%;
+	margin-right: 4%;
 }
 
 /*
@@ -890,27 +889,31 @@ background-image:
   transform: translate(-50%, -50%);
 }
 
+/*  контент в фильтре (внутри ячеек "от-до" съезжает при увеличении разрешения с 768 до 1200  */
+
 .price-controls label {
   display: inline-block;
   font-size: 14px;
   line-height: 30px;
   vertical-align: top;
-	text-align: center;
+	text-align: left;
   cursor: pointer;
 }
 
 .min-price {
-	width: 30%;
-  padding-left: 42px;
+	width: 31%;
+  padding-left: 19%;
 }
 
 .max-price {
 	width: 37%;
   padding-left: 13%;
+	margin-left: %;
 }
 
 .price-controls input {
-	width: 68%;
+	display: inline-block;
+	width: 70%;
   margin: 0;
   color: inherit;
   font: inherit;
@@ -973,11 +976,11 @@ background-image:
   font-family: inherit;
   background-color: rgba(0, 0, 0, 0);
   margin-top: 30px;
-	margin-left: 40px;
+	margin-left: 18%;
 	cursor: pointer;
 }
 
-.btn-transparent:hover {
+.btn-filter-show:hover {
   color: #000000;
   background-color: #ffffff;
 }
@@ -996,92 +999,147 @@ background-image:
   line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
 .sorting-result {
 	font-size: 21px;
   line-height: 26px;
 	font-weight: 700;
+	margin-left: 6%;
 }
 
 .sorting-tool {
   display: flex;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
 	font-weight: 400;
   text-align: left;
   vertical-align: top;
   text-transform: uppercase;
-  font-family: inherit;
-  padding: 10px 0px 5px 20px;
-  margin-bottom: 20px;
+  font-family: "PT Sans", "Myriad Pro", sans-serif;
+  padding: 6px 0px 5px 20px;
 }
 
 .sorting-title {
-	margin: 0px;
+	font-size: 12px;
+  line-height: 18px;
+	font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Myriad Pro", sans-serif;
+	margin: 0px 30px;
 }
 
-.sorting-tool .price { 
-  margin-right: 66px;
+.sorting-price { 
+  margin-right: 29px;
+	margin-left: 8px;
 }
 
-.sorting-tool .type {
-  margin-right: 62px;
+.sorting-type {
+  margin-right: 29px;
 }
 
-.sorting-tool .functional {
-  margin-right: 47px;
+.sorting-functional {
+  margin-right: px;
 }
 
 .sorting-item {
   text-decoration: none;
+	color: #81b3d2;
 }
 
 .sorting-item:hover {
-  color: #000000;
-  border-bottom: 1px solid #ee3643;
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item input:active {
-  color: #ee3643;
+  color: #000000;
   border-bottom: 0px;
 }
 
+:visited {
+	color: #b2b2b2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+/*  с  .sorting-item не ясно, как правильно задавать цвета, чтобы они все 4 состояния работали 
+
+есть стойкое ощущение, что сделала не верно             
+
+arrow-down:active::before "не срабатывает"
+
+*/
 
 /* .arrow */
 
+.sorting-direction {
+  position: relative;
+	margin-left: 20px;
+}
+
 .arrow{
- 
+
 }
 
 
 .arrow-up::before {
- 
+	content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -232px;
 }
 
 .arrow-down::before {
-  
+	content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+	width: 11px;
+	height: 10px;
+	background-position: -10px -142px;
+	margin-left: 25px;
 }
 
-.arrow-up:active::before {
-
+arrow-down{
+	width: 11px;
+	height: 10px;
+	background-position: -10px -202px;
 }
 
 .arrow-up:hover::before {
-  
+	width: 11px;
+	height: 10px;
+	background-position: -10px -172px;
 }
 
 .arrow-down:active::before {
-
+	width: 11px;
+	height: 10px;
+	background-position: -10px -112px;
 }
 
 .arrow-down:hover::before {
-  
+  width: 11px;
+  height: 10px;
+  background-position: -10px -82px;
 }
 
 :visited {
 	
 }
+
 
 
 
