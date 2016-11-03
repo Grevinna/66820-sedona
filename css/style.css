@@ -124,6 +124,7 @@ h2 {
   color: #b2b2b2;
 }
 
+/*  Отчего-то все ссылки в меню отображаются как активные   */
 
 
 /*    main   */
@@ -1136,9 +1137,11 @@ arrow-down{
   background-position: -10px -82px;
 }
 
+/*
 :visited {
 	
 }
+*/
 
 
 /*   found   */
@@ -1163,6 +1166,7 @@ arrow-down{
 
 .found-block {
 	width: 260px;
+	margin: 10px;
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 400;
@@ -1170,6 +1174,11 @@ arrow-down{
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
+}
+
+.found-title {
+	margin-top: 14px;
+	margin-bottom: 8px;
 }
 
 .found-title a{
@@ -1181,12 +1190,19 @@ arrow-down{
 	text-decoration: none;
 }
 
+.found-title a:hover {
+	color: #81b3d2;
+}
+
+.found-title a:active{
+	color: #b2b2b2;
+}
+
 .found-type, 
 .found-price {
 	display: inline-block;
 }
 
- 
 .found-type {
 	width: 115px;
 }
@@ -1199,30 +1215,47 @@ arrow-down{
 	font-family: inherit;
 	font-size: inherit;
   line-height: inherit;
-	font-weight: 700;
+	font-weight: 400;
 	color: #ffffff;
 	text-transform: uppercase;
-	background-color: #81b3d2;
 	width: 70px;
-	padding: 5px 20px;
+	padding: 3px 20px;
 	border: 0px;
-	margin-top: 24px;
+	margin-top: 13px;
 }
 
 .found-btn-more {
 	margin-right: 2px;
+	background-color: #81b3d2;
+}
+
+.found-btn-more:hover {
+	background-color: #669ec0;
+}
+
+.found-btn-more:active {
+	background-color: #5496bd;
+	color: #88b6d1;
 }
 
 .found-btn-reserve {
-	background-color: #766357;
 	width: 100px;
+	background-color: #766357;
 }
 
-.found-rating-img {
-	
+.found-btn-reserve:hover {
+	background-color: #604e43;
+}
+
+.found-btn-reserve:active {
+	background-color: #503e33;
+	color: #857871;
 }
 
 .found-rating {
+	margin-left: 15%;
+	margin-right: 5%;
+	margin-top: 30px;
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 400;
@@ -1232,8 +1265,39 @@ arrow-down{
   font-family: "PT Sans", "Myriad Pro", sans-serif;
 }
 
+.found-rating-img {
+	margin-top: px;
+	margin-bottom: 50px;
+}
+
+.found-rating-img {
+	display: block;
+	vertical-align: top;
+	background-image: url("../img/sprite.png");
+  background-repeat: repeat-x;
+/*
+	повторение фона не работает
+	*/
+  height: 17px;
+  background-position: -10px -1251px; 
+}
+
+.found-item:nth-child(1) .found-rating-img {
+	width: 100px;
+}
+
+.found-item:nth-child(2) .found-rating-img {
+	width: 50px;
+}
+
+.found-item:nth-child(3) .found-rating-img {
+	width: 100px;
+}
+
 .found-rating-value {
-	
+	padding: 5px 15px;
+	background-color: #f2f2f2;
+	color: #666666;
 }
 
 
