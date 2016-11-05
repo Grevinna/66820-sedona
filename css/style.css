@@ -601,8 +601,8 @@ background-image:
 }
 
 .map + .footer {
-	opacity: 0.90;
 	margin-top: -120px;
+	background: rgba(255,255,255,0.9);
 }
 
 .footer a {
@@ -753,7 +753,9 @@ background-image:
 .filter-container {
 	min-height: 218px;
 	margin-bottom: 50px;
-	padding-left: 5%;
+	padding-top: 2.4%;
+	padding-left: 6%;
+	padding-right: 6%;
 	
 	background: #477ca6 url("../img/filter-background-1200.jpg") right center no-repeat;
 	background-size: 100% auto;
@@ -769,17 +771,23 @@ background-image:
 .filter {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: flex-end;
 }
 
 .filter-block {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	
+	width: 16%;
+}
+
+.infrastructure {
+	margin-right: 19.5%;
 }
 
 .property-type {
-	margin-left: 13%;
+	margin-right: ;
 }
 
 .filter-title {
@@ -841,12 +849,10 @@ background-image:
 
 
 .filter-range {
-  width: 31.5%;
+  width: 31%;
 	max-width: 318px;
-	min-width: 226px;
-	margin-top: 23px;
-	margin-left: 14%;
-	margin-right: 4%;
+	min-width: 224px;
+	margin-left: auto;
 }
 
 /*
