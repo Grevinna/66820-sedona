@@ -75,6 +75,7 @@ h2 {
 
 .main-navigation-list {
 	padding: 0px;
+	padding-top: 14px;
 	margin: 0px;
 }
 
@@ -208,6 +209,17 @@ h2 {
 	padding-left: 5%;
 	padding-right: 5%;
 }
+
+/*
+.feature-inverse .feature-info {
+	width: 25.33%;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+Это свойство требуется для 1200, а для 768 работает padding: 5%
+
+*/
 
 .feature-title, .info-title {
 	font-size: 21px;
