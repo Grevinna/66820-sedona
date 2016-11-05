@@ -20,7 +20,7 @@ body {
   color: black;
   font-weight: normal;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
-  background: #ffffff;
+  background: #f2f2f2;
 	margin: 0px;
 }
 
@@ -48,11 +48,10 @@ h2 {
 	min-width: 768px;
 	max-width: 1200px;
 	
+	background: #ffffff;
 	box-shadow: 
 		11px 0 10px -10px #dbdbdb,
-		-11px 0 10px -10px #dbdbdb,
-		500px 0 0 0 #f2f2f2,
-		-500px 0 0 0 #f2f2f2;
+		-11px 0 10px -10px #dbdbdb;
 }
 
 
@@ -135,18 +134,13 @@ h2 {
 	justify-content: center;
 }
 
+
 /*   welcome   */
 
-/*   Проблемы с совпадением попиксельно фоновых изображений на разрешении 1200px 
-
-
-множественный фон с background без простыни выпал...
-
-*/
 
 .welcome {
 	background: 
-		url("../img/mask-1200.png") center -58px no-repeat,
+		url("../img/mask-1200.png") center bottom no-repeat,
 		#477ca6 url("../img/background-photo-1200.jpg") center center no-repeat;
 	background-size: 
 		100%,
@@ -161,7 +155,9 @@ h2 {
 	margin-bottom: 80px;
 }
 
+
 /*  content  */
+
 
 .content {
 	display: flex;
@@ -171,7 +167,9 @@ h2 {
 	text-transform: uppercase;
 }
 
+
 /*  caption  */
+
 
 .caption {
 	text-align: center;
@@ -190,7 +188,9 @@ h2 {
   line-height: 26px;
 }
 
+
 /*  feature  */
+
 
 .feature {
 	display: flex;
@@ -201,7 +201,7 @@ h2 {
 }
 
 .feature-info {
-	width: 23%;
+	width: 23.33%;
 	text-align: center;
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -224,12 +224,8 @@ h2 {
   line-height: 21px;
 }
 
-/*  Проблемы с переносом!!! Везде :(  
-в 768 было слово- с переносом - как это сделать?
-*/
-
 .feature-img {
-	width: 67%;
+	width: 66.37%;
 	background-image: url("../img/town-1200.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
@@ -242,7 +238,9 @@ h2 {
 	background-position: center;
 }
 
+
 /*  info  */
+
 
 .info {
 	display: flex;
@@ -255,7 +253,7 @@ h2 {
 }
 
 .info-item {
-	width: 33%;
+	width: 33.33%;
 	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -613,7 +611,9 @@ background-image:
 	margin-top: 50px;
 }
 
+
 /*   social-btn   */
+
 
 .social-btn {
   display: inline-block;
@@ -681,7 +681,9 @@ background-image:
     background-position: -10px -1323px;
 }
 
+
 /*   .website-author   */
+
 
 .website-author {
   vertical-align: top;
@@ -728,25 +730,21 @@ background-image:
 }
 
 
+
 /*    inner    */
+
 
 
 /*   filter   */
 
-.filter {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	
+
+.filter-container {
 	min-height: 218px;
 	margin-bottom: 50px;
 	padding-left: 5%;
 	
-	background-image: url("../img/filter-background-1200.jpg");
-	background-color: #477ca6;
-	background-size: 100% auto; 
-	background-repeat: no-repeat;
-	background-position: right center;
+	background: #477ca6 url("../img/filter-background-1200.jpg") right center no-repeat;
+	background-size: 100% auto;
 	
 	color: #ffffff;
 	font-family: inherit;
@@ -754,6 +752,12 @@ background-image:
   line-height: 26px;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+
+.filter {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
 .filter-block {
@@ -820,7 +824,9 @@ background-image:
   background-position: -10px -472px;
 }
 
+
 /*   filter-range   */
+
 
 .filter-range {
   width: 31.5%;
@@ -836,8 +842,6 @@ background-image:
 Этот заголовок смещен по-разному в макетах относительно ренжей
 
 Ползунок максимума находится в разных местах полосы в разных макетах
-
-это конечно можно попытаться подогнать, но стоит ли?
 
 */
 
@@ -1130,6 +1134,7 @@ arrow-down{
 .found-item {
 	display: flex;
 	border-top: 1px solid #e5e5e5;
+	padding: ;
 }
 
 .found-item:last-child {
@@ -1137,12 +1142,13 @@ arrow-down{
 }
 
 .found-img {
-	margin: 29px 35px 29px 45px;
+	width: 135px;
+/*	margin: 29px 35px 29px 45px;*/
 }
 
 .found-block {
-	width: 260px;
-	margin: 10px;
+	width: 260px;/*  а вот с шириной ты, мне кажется, ошиблась  */
+/*	margin: 10px;*/
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 400;
@@ -1228,6 +1234,10 @@ arrow-down{
 	color: #857871;
 }
 
+
+
+
+/* все отступы сносим. и кстати, почему ты не используешь space-between? */
 .found-rating {
 	flex-grow: 15;
 	padding-left: 25%;
@@ -1253,7 +1263,7 @@ arrow-down{
 	background-image: url("../img/sprite.png");
   background-repeat: repeat-x;
 /*
-	повторение фона не работает
+	повторение фона не работает - вставляем отдельной картинкой фон, а не спрайтом
 	*/
   height: 17px;
   background-position: -10px -1251px; 
