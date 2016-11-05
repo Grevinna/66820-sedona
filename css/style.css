@@ -21,10 +21,8 @@ body {
   font-weight: normal;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
   background: #ffffff;
-	margin-top: 0px;
+	margin: 0px;
 }
-
-/*  "Myriad Pro"  добавила, так как он "высвечивался" при определенном наведении на поля форм, вот только не знаю - он стандартный или нет? И еще: вообще нужен ли он? Какой стандартный шрифт нужно задать, как "запасной"?   */
 
 h1 {
   font-size: 18px;
@@ -50,10 +48,11 @@ h2 {
 	min-width: 768px;
 	max-width: 1200px;
 	
-	box-shadow: 11px 0 10px -10px #dbdbdb,
-		          -11px 0 10px -10px #dbdbdb,
-		          500px 0 0 0 #f2f2f2,
-		          -500px 0 0 0 #f2f2f2;
+	box-shadow: 
+		11px 0 10px -10px #dbdbdb,
+		-11px 0 10px -10px #dbdbdb,
+		500px 0 0 0 #f2f2f2,
+		-500px 0 0 0 #f2f2f2;
 }
 
 
@@ -77,7 +76,7 @@ h2 {
 
 .main-navigation-list {
 	padding: 0px;
-	
+	margin: 0px;
 }
 
 .main-navigation-item {
@@ -124,7 +123,6 @@ h2 {
   color: #b2b2b2;
 }
 
-/*  Отчего-то все ссылки в меню отображаются как активные   */
 
 
 /*    main   */
@@ -139,20 +137,20 @@ h2 {
 
 /*   welcome   */
 
-/*   Проблемы с совпадением попиксельно фоновых изображений на разрешении 1200px  */
+/*   Проблемы с совпадением попиксельно фоновых изображений на разрешении 1200px 
+
+
+множественный фон с background без простыни выпал...
+
+*/
 
 .welcome {
-	background-image:
-		url("../img/mask-1200.png"),
-	  url("../img/background-photo-1200.jpg");
-	background-color: #477ca6;
+	background: 
+		url("../img/mask-1200.png") center -58px no-repeat,
+		#477ca6 url("../img/background-photo-1200.jpg") center center no-repeat;
 	background-size: 
 		100%,
 		100% auto; 
-	background-repeat: no-repeat;
-	background-position: 
-		center bottom,
-		right center;
 	text-align: center;
 	min-height: 508px;
 	margin-bottom: 40px;
@@ -224,13 +222,11 @@ h2 {
 .feature-text, .info-text {
 	font-size: 14px;
   line-height: 21px;
-	hyphens: auto;
-	-moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
 }
 
-/*  Проблемы с переносом!!! Везде :(  */
+/*  Проблемы с переносом!!! Везде :(  
+в 768 было слово- с переносом - как это сделать?
+*/
 
 .feature-img {
 	width: 67%;
@@ -242,12 +238,8 @@ h2 {
 }
 
 .feature-inverse-img {
-	width: 67%;
 	background-image: url("../img/devil-bridge-1200.jpg");
-	background-size: cover; 
-	background-repeat: no-repeat;
 	background-position: center;
-	min-height: 255px;
 }
 
 /*  info  */
@@ -403,24 +395,13 @@ h2 {
 	background-color: #ebebeb;
 }
 
-.form-input:active {
+.form-input:focus {
 	background-color: #ffffff;
-	box-shadow: 2px 2px 0 0 #e5e5e5 inset;
-	border: 0px;
+	box-shadow: 
+		2px 2px 0 0 #e5e5e5 inset,
+		-2px -2px 0 0 #e5e5e5 inset;
+	outline: 0px;
 }
-
-/*  Очень "странное" поведение в активном состоянии, судя по-всему его надо было задавать как-то иначе
-
-При клике- инпут вылетает из своего места в потоке
-
-Вместо бордера задала тень, но не помогло
-
-В инструментах разработчика причин не нашла (запуталась)
-
-Как-то отключить дополлнительно настройки брвузеров?
-
-*/
-
 
 label:nth-child(1) .form-input {
 	margin-left: 20px;
@@ -619,22 +600,17 @@ background-image:
 	color: #000000;
 }
 
-.footer section {
+.footer-section {
 	display: inline-block;
+	font-size: 0px;
+	vertical-align: top;
+	text-align: center;
+	width: 33%;
 }
 
 .hashtag {
-	vertical-align: top;
-	text-align: center;
-	width: 33%;
   font-size: 21px;
 	margin-top: 50px;
-}
-
-.footer-social {
-	vertical-align: top;
-	text-align: center;
-	width: 33%;
 }
 
 /*   social-btn   */
@@ -1056,14 +1032,14 @@ background-image:
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-item input:active {
+.sorting-item:active {
   color: #000000;
   border-bottom: 0px;
 }
 
-:visited {
-	color: #b2b2b2;
-  border-bottom: 1px dotted #81b3d2;
+.sorting-item:visited {
+	text-decoration: none;
+	color: #81b3d2;
 }
 
 /*  с  .sorting-item не ясно, как правильно задавать цвета, чтобы они все 4 состояния работали 
