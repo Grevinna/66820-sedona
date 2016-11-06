@@ -1014,18 +1014,25 @@ margin-right: 8%;
   line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
+	
 	margin-bottom: 30px;
+	margin-left: 6%;
+	margin-right: 6%;
 }
 
 .sorting-result {
 	font-size: 21px;
   line-height: 26px;
 	font-weight: 700;
-	margin-left: 6%;
+	margin-right: 18px;
 }
 
 .sorting-tool {
   display: flex;
+	padding: 6px 0px 5px 0px;
+	width: auto;
+	flex-grow: 5;
+	
   font-size: 12px;
   line-height: 18px;
 	font-weight: 400;
@@ -1033,7 +1040,6 @@ margin-right: 8%;
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
-  padding: 6px 0px 5px 20px;
 }
 
 .sorting-title {
@@ -1056,10 +1062,6 @@ margin-right: 8%;
   margin-right: 29px;
 }
 
-.sorting-functional {
-  margin-right: px;
-}
-
 .sorting-item {
   text-decoration: none;
 	color: #81b3d2;
@@ -1080,76 +1082,56 @@ margin-right: 8%;
 	color: #81b3d2;
 }
 
-/*  с  .sorting-item не ясно, как правильно задавать цвета, чтобы они все 4 состояния работали 
-
-есть стойкое ощущение, что сделала не верно             
-
-arrow-down:active::before "не срабатывает"
-
-*/
-
 
 /* .arrow */
 
 
 .sorting-direction {
   position: relative;
-	margin-left: 20px;
+	margin-left: auto;
 }
 
 .arrow{
+/*  display: inline-block;*/
+  font-size: 0;
+  cursor:pointer;
+}
 
+.arrow-up {
+margin-right: 10px;	
+}
+	
+	
+.arrow::before{
+	 content: "";
+  display: inline-block;
+	
+  border: 10px solid #c6c2bd;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+	
+	border-top-color: #cccccc;
+  border-bottom-color: #cccccc;
 }
 
 .arrow-up::before {
-	content: "";
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform:translate(-50%, -50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-	width: 11px;
-	height: 10px;
-	background-position: -10px -232px;
+  border-top-width: 0;
 }
 
 .arrow-down::before {
-	content: "";
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform:translate(-50%, -50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-	width: 11px;
-	height: 10px;
-	background-position: -10px -142px;
-	margin-left: 25px;
+  border-bottom-width: 0;
 }
 
-arrow-down{
-	width: 11px;
-	height: 10px;
-	background-position: -10px -202px;
+.arrow:hover::before {
+  border-top-color: #000000;
+  border-bottom-color: #000000;
 }
 
-.arrow-up:hover::before {
-	width: 11px;
-	height: 10px;
-	background-position: -10px -172px;
-}
-
-.arrow-down:active::before {
-	width: 11px;
-	height: 10px;
-	background-position: -10px -112px;
-}
-
-.arrow-down:hover::before {
-  width: 11px;
-  height: 10px;
-  background-position: -10px -82px;
+.arrow:active::before {
+  border-top-color: #81b3d2;
+  border-bottom-color: #81b3d2;
 }
 
 /*
@@ -1183,7 +1165,6 @@ arrow-down{
 .found-img {
 	width: 135px;
 	margin-right: 31px;
-/*	margin: 29px 35px 29px 45px;*/
 }
 
 .found-block {
