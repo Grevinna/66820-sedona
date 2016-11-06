@@ -590,14 +590,13 @@ background-image:
 
 
 .footer {
-	min-height: 120px;
+	height: 120px;
 	font-family: inherit;
 	font-size: 14px;
   line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
 	background-color: #ffffff;
-	
 }
 
 .map + .footer {
@@ -611,7 +610,9 @@ background-image:
 }
 
 .footer-section {
-	display: inline-block;
+/*	display: inline-block;*/
+	display: flex;
+	flex-direction: column;
 	font-size: 0px;
 	vertical-align: top;
 	text-align: center;
@@ -752,10 +753,11 @@ background-image:
 
 .filter-container {
 	min-height: 218px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	padding-top: 2.4%;
 	padding-left: 6%;
 	padding-right: 6%;
+	padding-bottom: 0%;
 	
 	background: #477ca6 url("../img/filter-background-1200.jpg") right center no-repeat;
 	background-size: 100% auto;
@@ -771,7 +773,7 @@ background-image:
 .filter {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 .filter-block {
@@ -782,23 +784,19 @@ background-image:
 	width: 16%;
 }
 
-.infrastructure {
-	margin-right: 19.5%;
-}
-
-.property-type {
-	margin-right: ;
-}
+.infrastructure { 
+margin-right: 8%; 
+} 
 
 .filter-title {
-	margin-top: 3px;
+	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
 .filter-block input + label {
   position: relative;
   padding: 10px;
-  padding-left: 40px;
+  padding-left: 39px;
   cursor: pointer;
 }
 
@@ -810,7 +808,7 @@ background-image:
   content: "";
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 10px;
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -823,7 +821,7 @@ background-image:
   content: "";
   position: absolute;
   top: 50%;
-  left: 11%;
+  left: 12px;
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -853,6 +851,7 @@ background-image:
 	max-width: 318px;
 	min-width: 224px;
 	margin-left: auto;
+	margin-bottom: 0px;
 }
 
 /*
@@ -1072,7 +1071,9 @@ arrow-down:active::before "не срабатывает"
 
 */
 
+
 /* .arrow */
+
 
 .sorting-direction {
   position: relative;
@@ -1082,7 +1083,6 @@ arrow-down:active::before "не срабатывает"
 .arrow{
 
 }
-
 
 .arrow-up::before {
 	content: "";
@@ -1151,8 +1151,9 @@ arrow-down{
 
 .found-item {
 	display: flex;
+	justify-content: flex-start;
 	border-top: 1px solid #e5e5e5;
-	padding: ;
+	padding: 29px 45px;
 }
 
 .found-item:last-child {
@@ -1161,12 +1162,13 @@ arrow-down{
 
 .found-img {
 	width: 135px;
+	margin-right: 31px;
 /*	margin: 29px 35px 29px 45px;*/
 }
 
 .found-block {
-	width: 260px;/*  а вот с шириной ты, мне кажется, ошиблась  */
-/*	margin: 10px;*/
+	width: 258px;
+	
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 400;
@@ -1177,7 +1179,7 @@ arrow-down{
 }
 
 .found-title {
-	margin-top: 14px;
+	margin-top: -4px;
 	margin-bottom: 8px;
 }
 
@@ -1211,6 +1213,12 @@ arrow-down{
 	display: inline-block;
 	vertical-align: top;
 	width: 100%;
+		
+	width: 70px;
+	padding: 3px 20px;
+	border: 0px;
+	margin-top: 13px;
+	
 	text-decoration: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -1218,10 +1226,6 @@ arrow-down{
 	font-weight: 400;
 	color: #ffffff;
 	text-transform: uppercase;
-	width: 70px;
-	padding: 3px 20px;
-	border: 0px;
-	margin-top: 13px;
 }
 
 .found-btn-more {
@@ -1239,7 +1243,7 @@ arrow-down{
 }
 
 .found-btn-reserve {
-	width: 100px;
+	width: 102px;
 	background-color: #766357;
 }
 
@@ -1253,50 +1257,47 @@ arrow-down{
 }
 
 
+/*   found-rating   */
 
 
-/* все отступы сносим. и кстати, почему ты не используешь space-between? */
+
 .found-rating {
-	flex-grow: 15;
-	padding-left: 25%;
-	margin-left: ;
-	margin-right: 4%;
-	margin-top: 30px;
+	margin-left: auto;
+	margin-right: 0%;
+	
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 400;
-  text-align: left;
+  text-align: right;
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
 }
 
 .found-rating-img {
+	margin-right: 0px;
+	margin-left: auto;
 	margin-bottom: 50px;
+	min-height: 18px;
 }
 
 .found-rating-img {
 	display: block;
 	vertical-align: top;
-	background-image: url("../img/sprite.png");
+	background-image: url("../img/star.png");
   background-repeat: repeat-x;
-/*
-	повторение фона не работает - вставляем отдельной картинкой фон, а не спрайтом
-	*/
-  height: 17px;
-  background-position: -10px -1251px; 
 }
 
 .found-item:nth-child(1) .found-rating-img {
-	width: 100px;
+	width: 72px;
 }
 
 .found-item:nth-child(2) .found-rating-img {
-	width: 50px;
+	width: 36px;
 }
 
 .found-item:nth-child(3) .found-rating-img {
-	width: 100px;
+	width: 54px;
 }
 
 .found-rating-value {
