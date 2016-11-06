@@ -590,7 +590,12 @@ background-image:
 
 
 .footer {
+	display: flex;
+	justify-content: space-between;
 	height: 120px;
+	padding-left: %;
+	padding-right: %;
+	
 	font-family: inherit;
 	font-size: 14px;
   line-height: 26px;
@@ -611,22 +616,32 @@ background-image:
 
 .footer-section {
 /*	display: inline-block;*/
+/*
 	display: flex;
-	flex-direction: column;
-	font-size: 0px;
-	vertical-align: top;
+	flex-direction: row;
+*/
+/*	font-size: 0px;*/
+	vertical-align: middle;
 	text-align: center;
 	width: 33%;
 }
 
 .hashtag {
+	text-align: center;
   font-size: 21px;
-	margin-top: 50px;
+	margin-top: 50px; 
+	margin-left: %;
+	padding-left: %;
 }
 
 
 /*   social-btn   */
 
+
+.footer-social {
+	margin-left: %;
+	margin-right: %;
+}
 
 .social-btn {
   display: inline-block;
@@ -701,15 +716,17 @@ background-image:
 .website-author {
   vertical-align: top;
 	text-align: center;
-	width: 33%;
+	width: %;
 	margin-top: 40px;
 }
 
 .website-author-link {
 	position: relative;
 	display: inline-block;
+	
 	text-align: left;
 	vertical-align: top;
+	
 	line-height: 38px;
 	font-family: inherit;
 	font-weight: normal;
@@ -1153,7 +1170,10 @@ arrow-down{
 	display: flex;
 	justify-content: flex-start;
 	border-top: 1px solid #e5e5e5;
-	padding: 29px 45px;
+	padding-left: 6%;
+	padding-right: 6%;
+	padding-top: 29px;
+	padding-bottom: 29px;
 }
 
 .found-item:last-child {
