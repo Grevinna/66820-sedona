@@ -871,6 +871,7 @@ margin-right: 41%;
   width: 31%;
 	max-width: 318px;
 	min-width: 224px;
+	text-align: center;
 }
 
 /*
@@ -884,6 +885,7 @@ margin-right: 41%;
 .filter-range-title {
 	margin-top: 0px;
   margin-bottom: 9px;
+	margin-right: auto;
 }
 
 .price-controls {
@@ -982,18 +984,20 @@ margin-right: 41%;
 }
 
 .btn-filter-show {
-  padding: 8px 34px;
   border: 2px solid #ffffff;
   border-radius: 2px;
+	
 	text-decoration: none;
   text-transform: uppercase;
 	color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   font-family: inherit;
+	
   background-color: rgba(0, 0, 0, 0);
+	
+	padding: 8px 34px;
   margin-top: 30px;
-	margin-left: 18%;
 	cursor: pointer;
 }
 
@@ -1003,7 +1007,9 @@ margin-right: 41%;
 }
 
 
+
 /*   sorting   */
+
 
 
 .sorting {
