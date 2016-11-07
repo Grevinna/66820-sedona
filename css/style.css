@@ -871,6 +871,7 @@ margin-right: 41%;
   width: 31%;
 	max-width: 318px;
 	min-width: 224px;
+	vertical-align: top;
 	text-align: center;
 }
 
@@ -880,10 +881,12 @@ margin-right: 41%;
 
 Ползунок максимума находится в разных местах полосы в разных макетах
 
+Решила оставить вариант, который интуитивно кажется оптимальным.
+
 */
 
 .filter-range-title {
-	margin-top: 0px;
+	margin-top: -10px;
   margin-bottom: 9px;
 	margin-right: auto;
 }
@@ -1072,22 +1075,24 @@ margin-right: 41%;
 
 .sorting-item {
   text-decoration: none;
-	color: #81b3d2;
+	color: #b2b2b2;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item:hover {
   color: #81b3d2;
-  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-item:active {
+  text-decoration: none;
   color: #000000;
   border-bottom: 0px;
 }
 
-.sorting-item:visited {
+.sorting-item-active {
 	text-decoration: none;
 	color: #81b3d2;
+	border-bottom: 0px;
 }
 
 
@@ -1108,7 +1113,6 @@ margin-right: 41%;
 .arrow-up {
 margin-right: 10px;	
 }
-	
 	
 .arrow::before{
 	 content: "";
@@ -1142,19 +1146,16 @@ margin-right: 10px;
   border-bottom-color: #81b3d2;
 }
 
-/*
-:visited {
-	
+.arrow-active::before {
+	border-top-color: #81b3d2;
+  border-bottom-color: #81b3d2;
 }
-*/
+
 
 
 /*   found   */
 
 
-.found {
-	
-}
 
 .found-item {
 	display: flex;
@@ -1298,15 +1299,15 @@ margin-right: 10px;
 }
 
 .found-item:nth-child(1) .found-rating-img {
-	width: 72px;
+	width: 96px;
 }
 
 .found-item:nth-child(2) .found-rating-img {
-	width: 36px;
+	width: 48px;
 }
 
 .found-item:nth-child(3) .found-rating-img {
-	width: 54px;
+	width: 72px;
 }
 
 .found-rating-value {
