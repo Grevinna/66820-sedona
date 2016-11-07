@@ -790,19 +790,23 @@ background-image:
 .filter {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
+}
+
+.filter-block-double {
+	display: flex;
+	justify-content: space-between;
+	max-width: 37%;
 }
 
 .filter-block {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
-	width: 16%;
 }
 
 .infrastructure { 
-margin-right: 8%; 
+margin-right: 41%; 
 } 
 
 .filter-title {
@@ -867,8 +871,6 @@ margin-right: 8%;
   width: 31%;
 	max-width: 318px;
 	min-width: 224px;
-	margin-left: auto;
-	margin-bottom: 0px;
 }
 
 /*
