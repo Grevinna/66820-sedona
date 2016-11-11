@@ -828,7 +828,7 @@ h2 {
 
 .filter-container {
 	min-height: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	padding-top: 15px;
 	padding-bottom: 20px;
 	padding-left: 6%;
@@ -979,41 +979,58 @@ h2 {
 
 /*  контент в фильтре (внутри ячеек "от-до" съезжает при увеличении разрешения с 768 до 1200  */
 
+.price-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	text-align: center;
+	line-height: 31px;
+}
+
 .price-controls label {
   display: inline-block;
   font-size: 14px;
   line-height: 30px;
   vertical-align: top;
-	text-align: left;
+	text-align: right;
   cursor: pointer;
 }
 
 .min-price {
-	width: 31%;
-  padding-left: 19%;
+	width: 50%;
+  padding-right: 5px;
 }
 
 .max-price {
-	width: 37%;
-  padding-left: 13%;
-	margin-left: %;
+	width: 45%;
+  padding-right: 5px;
 }
 
 .price-controls input {
 	display: inline-block;
-	width: 70%;
   margin: 0;
 	
+	vertical-align: top;
+	text-align: left;
+	line-height: 28px;
+	font-size: 14px;
   color: inherit;
-  font: inherit;
+	font-family: inherit;
 	
   background: none;
   border: none;
 }
 
-.max-price input {
-	width: 72%;
+.min-price + input {
+	width: 45%;
+	padding-left: %;
 }
+
+.max-price + input {
+	width: 50%;
+}
+
+/*   range   */
 
 .range-controls {
   position: relative;
@@ -1026,7 +1043,7 @@ h2 {
 }
 
 .bar {
-  width: 82.5%;
+  width: 83%;
   height: 2px;
   background: #ffffff;
 }
@@ -1097,7 +1114,7 @@ h2 {
 	font-weight: 400;
 	text-transform: uppercase;
 	
-	margin-bottom: 30px;
+	margin-bottom: 23px;
 	margin-left: 6%;
 	margin-right: 6%;
 }
