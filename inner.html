@@ -30,7 +30,7 @@
 			</header>
 			<main class="main">
 				<section class="filter-container">
-					<form class="filter" action="form.php" method="get">
+					<form class="filter" action="form.php" method="post">
 						<div class="filter-block infrastructure">
 							<h3 class="filter-title">Инфраструктура:</h3>
 							<input type="checkbox" id="ch1-infrastructure" value="бассейн" name="infrastructure-input" checked>
@@ -52,8 +52,14 @@
 						<div class="filter-block filter-range">
 							<h3 class="filter-title filter-range-title">Стоимость в сутки (р):</h3>
 							<div class="price-controls">
-								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-								<label class="max-price">до <input name="max-price" type="text" value="3000"></label>
+								
+									<label class="min-price" for="ch3-infrastructure">от</label>
+									<input name="min-price" type="text" value="0" id="ch3-infrastructure">
+								
+								
+									<label class="max-price" for="ch3-infrastructure">до</label>
+									<input name="max-price" type="text" value="3000" id="ch3-infrastructure">
+								
 							</div>
 							<div class="range-controls">
 								<div class="scale">

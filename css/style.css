@@ -20,6 +20,7 @@ body {
   color: black;
   font-weight: normal;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
+	
   background: #f2f2f2;
 	margin: 0px;
 }
@@ -42,6 +43,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	
 	margin: auto;
 	
 	width: 100%;
@@ -70,7 +72,10 @@ h2 {
 	left: 50%;
 	top: 0%;
 	margin-left: -69px;
-	cursor: pointer;
+}
+
+.logo img {
+	border: 0px;
 }
 
 .main-navigation-list {
@@ -81,10 +86,13 @@ h2 {
 
 .main-navigation-item {
 	display: inline-block;
+	
 	width: 20%;
 	padding-top: 2px;
+	
 	list-style-type: none;
 	vertical-align: top;
+	
 	text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
@@ -146,7 +154,9 @@ h2 {
 	background-size: 
 		100%,
 		100% auto; 
+	
 	text-align: center;
+	
 	min-height: 508px;
 	margin-bottom: 40px;
 }
@@ -164,7 +174,9 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	
 	margin: auto;
+	
 	text-transform: uppercase;
 }
 
@@ -181,6 +193,7 @@ h2 {
 	font-size: 21px;
   line-height: 26px;
 	font-weight: 700;
+	
 	margin-bottom: 30px;
 }
 
@@ -203,11 +216,12 @@ h2 {
 
 .feature-info {
 	width: 23.33%;
+	padding-left: 5%;
+	padding-right: 5%;
+	
 	text-align: center;
 	background-color: #81b3d2;
 	color: #ffffff;
-	padding-left: 5%;
-	padding-right: 5%;
 }
 
 /*
@@ -238,11 +252,12 @@ h2 {
 
 .feature-img {
 	width: 66.67%;
+	min-height: 255px;
+	
 	background-image: url("../img/town-1200.jpg");
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center left;
-	min-height: 255px;
 }
 
 .feature-inverse-img {
@@ -265,6 +280,7 @@ h2 {
 }
 
 .info-item {
+	box-sizing: border-box;
 	width: 33.33%;
 	text-align: center;
 	padding-left: 5%;
@@ -286,9 +302,11 @@ h2 {
   position: absolute;
   top: -310%;
   left: 50%;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
   width: 75px;
   height: 72px;
   background-position: -10px -724px;
@@ -299,9 +317,11 @@ h2 {
   position: absolute;
   top: -310%;
   left: 50%;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
   width: 74px;
   height: 70px;
   background-position: -10px -634px;
@@ -312,9 +332,11 @@ h2 {
   position: absolute;
   top: -310%;
   left: 50%;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
 	width: 64px;
 	height: 76px;
 	background-position: -10px -1155px;
@@ -334,6 +356,7 @@ h2 {
 	font-size: 30px;
   line-height: 24px;
 	font-weight: 700;
+	
 	margin-top: 56px;
 	margin-bottom: 33px;
 }
@@ -346,19 +369,22 @@ h2 {
 .form-container {
 	position: relative;
 	display: inline-block;
+	
 	width: 568px;
 	margin-top: 34px;
 }
 
 .form-link {
 	display: block;
+	padding: 31px;
+	
 	vertical-align: top;
 	font-size: 21px;
   line-height: 26px;
 	font-weight: 700;
 	color: #ffffff;
+	
 	background-color: #766357;
-	padding: 31px;
 }
 
 .form-link:hover {
@@ -370,35 +396,58 @@ h2 {
 	color: #857871;
 }
 
+
+/*   form   */
+
+
 .form {
 	position: absolute;
 	display: block;
-	vertical-align: top;
+	
+	width: 568px;
+	box-sizing: border-box;
 	padding: 55px;
+	
+	text-align: left;
+	vertical-align: top;
 	background-color: #ffffff;
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 700;
 }
 
-.form label {
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	margin-bottom: 30px;
+.arrival-date-box, 
+.date-of-departure-box, 
+.adults-box, 
+.children-box {
+	margin-bottom: 30px; 
 }
+
+/*
+.form label {
+	margin-right: 14px;
+}
+*/
 
 .form-input {
 	width: 320px;
+	height: 22px;
+	
+	padding: 8px 13px; 
+	margin-left: 14px;
+	
 	font-family: inherit;
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 700;
 	text-transform: uppercase;
+	
 	background-color: #f2f2f2;
 	border: 0px;
-	padding: 8px 13px; 
-	margin-left: 16px;
+}
+
+.arrival-date-box .form-input {
+	margin-left: 17px;
 }
 
 .form-input:hover {
@@ -411,27 +460,6 @@ h2 {
 		2px 2px 0 0 #e5e5e5 inset,
 		-2px -2px 0 0 #e5e5e5 inset;
 	outline: 0px;
-}
-
-label:nth-child(1) .form-input {
-	margin-left: 20px;
-}
-
-label:nth-child(3), 
-label:nth-child(4) {
-	width: auto;
-}
-
-label:nth-child(3) .form-input, 
-label:nth-child(4) .form-input {
-	width: 88px;
-	text-align: center;
-	margin-left: 22px;
-}
-
-label:nth-child(3) .form-input {
-	margin-left: 37px;
-	margin-right: 50px;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -450,95 +478,122 @@ label:nth-child(3) .form-input {
    color: #000000;  
 }
 
-.arrival-date::before,
-.date-of-departure::before {
+.arrival-date-box,
+.date-of-departure-box {
+	position: relative;
+}
+
+.arrival-date-box::before,
+.date-of-departure-box::before {
   content: "";
   position: absolute;
   top: 50%;
   right: 0%;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
   width: 21px;
   height: 22px;
   background-position: -10px -346px;
 }
 
-.arrival-date:hover::before,
-.date-of-departure:hover::before {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -262px;
+.arrival-date-box:hover::before,
+.date-of-departure-box:hover::before {
+  width: 21px;
+  height: 22px;
+  background-position: -10px -262px;
 }
 
-.arrival-date:active::before,
-.date-of-departure:active::before {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -304px;
+.arrival-date-box:active::before,
+.date-of-departure-box:active::before {
+  width: 21px;
+  height: 22px;
+  background-position: -10px -304px;
 }
 
-.adults::before,
-.children::before {
+.adults-box, 
+.children-box {
+	display: inline-block;
+	
+	position: relative;
+	width: 227px;
+	
+	vertical-align: top;
+	text-align: right;
+}
+
+.adults-box .form-input, 
+.children-box .form-input {
+	width: 89px;
+	margin-left: 20px;
+	
+	text-align: center;
+	vertical-align: middle;
+}
+
+.adults-box .form-input {
+	margin-left: 36px;
+}
+
+.adults-box::before,
+.children-box::before {
 	content: "";
   display: inline-block;
 	position: absolute;
 	top: 50%;
-  right: 82px;
+  right: 83px;
+	
   transform:translate(-50%, -50%);
 	background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
 	width: 12px;
   height: 3px;
   background-position: -10px -1039px;
 }
 
-.adults::before {
-	right: 135px;
-}
-
-.adults:hover::before,
-.children:hover::before {
+.adults-box:hover::before,
+.children-box:hover::before {
 	width: 12px;
 	height: 3px;
 	background-position: -10px -993px;
 }
 
-.adults:active::before,
-.children:active::before {
+.adults-box:active::before,
+.children-box:active::before {
 	width: 12px;
   height: 3px;
   background-position: -10px -1016px;
 }
 
-.adults::after,
-.children::after {
+.adults-box::after,
+.children-box::after {
 	content: "";
   display: inline-block;
 	position: absolute;
 	top: 50%;
   right: 10px;
+	
   transform:translate(-50%, -50%);
 	background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
 	width: 11px;
 	height: 11px;
 	background-position: -10px -1124px;
 }
 
-.adults::after {
-	right: 60px;
-}
-
-.adults:hover::after,
-.children:hover::after {
+.adults-box:hover::after,
+.children-box:hover::after {
 	width: 11px;
 	height: 11px;
 	background-position: -10px -1062px;
 }
 
-.adults:active::before,
-.children:active::before {
+.adults-box:active::before,
+.children-box:active::before {
 	width: 11px;
 	height: 11px;
 	background-position: -10px -1093px;
@@ -546,18 +601,22 @@ label:nth-child(3) .form-input {
 
 .form-btn {
 	display: block;
-	vertical-align: top;
 	width: 100%;
+	
+	padding: 16px;
+	margin-top: 24px;
+	
+	vertical-align: top;
+	
 	font-family: inherit;
 	font-size: 21px;
   line-height: 26px;
 	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
+	
 	background-color: #81b3d2;
-	padding: 17px;
 	border: 0px;
-	margin-top: 24px;
 }
 
 .form-btn:hover {
@@ -574,13 +633,14 @@ label:nth-child(3) .form-input {
 
 
 .map-content {
-background-image:
+	min-height: 593px;
+	
+  background-image:
 	  url("../img/map-1200.jpg");
 	background-size: auto; 
 	background-repeat: no-repeat;
 	background-position: 
 		center;
-	min-height: 593px;
 }
 
 
@@ -592,6 +652,7 @@ background-image:
 .footer {
 	display: flex;
 	justify-content: space-between;
+	
 	height: 120px;
 	padding-left: %;
 	padding-right: %;
@@ -601,6 +662,7 @@ background-image:
   line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	
 	background-color: #ffffff;
 }
 
@@ -615,43 +677,35 @@ background-image:
 }
 
 .footer-section {
-/*	display: inline-block;*/
-/*
-	display: flex;
-	flex-direction: row;
-*/
-/*	font-size: 0px;*/
 	vertical-align: middle;
 	text-align: center;
 	width: 33%;
 }
 
 .hashtag {
+	margin-top: 50px; 
+	
 	text-align: center;
   font-size: 21px;
-	margin-top: 50px; 
-	margin-left: %;
-	padding-left: %;
 }
 
 
 /*   social-btn   */
 
 
-.footer-social {
-	margin-left: %;
-	margin-right: %;
-}
 
 .social-btn {
   display: inline-block;
   position: relative;
+	
   width: 46px;
   height: 48px;
   margin: 36px 1px;
+	
   font-size: 0; /*  скрывает текст */
   vertical-align: top;
   text-decoration: none;
+	
   background-color: #81b3d2;
 }
 
@@ -668,6 +722,7 @@ background-image:
   position: absolute;
   top: 50%;
   left: 50%;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -692,21 +747,21 @@ background-image:
 }
 
 .social-btn-fb:active::before {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -595px;
+  width: 10px;
+  height: 19px;
+  background-position: -10px -595px;
 }
 
 .social-btn-youtube:active::before{
-    width: 20px;
-    height: 16px;
-    background-position: -10px -46px;
+  width: 20px;
+  height: 16px;
+  background-position: -10px -46px;
 }
 
 .social-btn-tw:active::before {
-    width: 17px;
-    height: 15px;
-    background-position: -10px -1323px;
+  width: 17px;
+  height: 15px;
+  background-position: -10px -1323px;
 }
 
 
@@ -724,14 +779,15 @@ background-image:
 	position: relative;
 	display: inline-block;
 	
+	width: 200px;
+	height: 41px;
+	
 	text-align: left;
 	vertical-align: top;
 	
 	line-height: 38px;
 	font-family: inherit;
 	font-weight: normal;
-	width: 200px;
-	height: 41px;
 }
 
 .website-author-link::before {
@@ -739,9 +795,11 @@ background-image:
   position: absolute;
   top: 50%;
   left:140px;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
 	width: 113px;
 	height: 39px;
 	background-position: -10px -816px;
@@ -769,20 +827,22 @@ background-image:
 
 
 .filter-container {
-	min-height: 218px;
+	min-height: 0px;
 	margin-bottom: 30px;
-	padding-top: 2.4%;
+	padding-top: 15px;
+	padding-bottom: 20px;
 	padding-left: 6%;
 	padding-right: 6%;
-	padding-bottom: 0%;
 	
 	background: #477ca6 url("../img/filter-background-1200.jpg") right center no-repeat;
 	background-size: 100% auto;
 	
+	vertical-align: top;
+	text-align: left;
 	color: #ffffff;
 	font-family: inherit;
 	font-size: 14px;
-  line-height: 26px;
+  line-height: 46px;
 	font-weight: 400;
 	text-transform: uppercase;
 }
@@ -790,7 +850,6 @@ background-image:
 .filter {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
 }
 
 .filter-block {
@@ -798,6 +857,8 @@ background-image:
 	flex-direction: column;
 	justify-content: center;
 	width: 16%;
+	min-width: 140px;
+	vertical-align: top;
 }
 
 .infrastructure { 
@@ -805,15 +866,17 @@ background-image:
 } 
 
 .filter-title {
-	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+	line-height: 42px;
+	text-align: left;
 }
 
 .filter-block input + label {
   position: relative;
-  padding: 10px;
   padding-left: 40px;
   cursor: pointer;
+	vertical-align: top;
 }
 
 .filter-block input[type="checkbox"] {
@@ -823,11 +886,13 @@ background-image:
 .filter-block input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 10px;
+	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	
   width: 22px;
   height: 22px;
   background-position: -10px -388px;
@@ -836,11 +901,13 @@ background-image:
  .filter-block input[type="checkbox"]:checked + label::before{
   content: "";
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 12px;
+	 
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+	 
 	width: 26px;
 	height: 22px;
 	background-position: -10px -430px;;
@@ -891,6 +958,7 @@ background-image:
   position: relative;
   height: 32px;
   margin-bottom: 20px;
+	
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -899,10 +967,12 @@ background-image:
 .price-controls::after {
   content: "";
   position: absolute;
+	
   top: 50%;
   left: 50%;
   width: 2px;
   height: 25px;
+	
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
@@ -933,8 +1003,10 @@ background-image:
 	display: inline-block;
 	width: 70%;
   margin: 0;
+	
   color: inherit;
   font: inherit;
+	
   background: none;
   border: none;
 }
@@ -964,6 +1036,7 @@ background-image:
   top: -9px;
   width: 4px;
   height: 4px;
+	
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -984,6 +1057,11 @@ background-image:
 }
 
 .btn-filter-show {
+	padding: 8px 33px 8px 34px;
+  margin-top: 30px;
+	margin-left: -11px;
+	cursor: pointer;
+	
   border: 2px solid #ffffff;
   border-radius: 2px;
 	
@@ -995,11 +1073,6 @@ background-image:
   font-family: inherit;
 	
   background-color: rgba(0, 0, 0, 0);
-	
-	padding: 8px 33px 8px 34px;
-  margin-top: 30px;
-	cursor: pointer;
-	margin-left: -11px;
 }
 
 .btn-filter-show:hover {
@@ -1059,6 +1132,7 @@ background-image:
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
+	
 	margin: 0px 30px;
 }
 
@@ -1158,7 +1232,9 @@ margin-right: 10px;
 .found-item {
 	display: flex;
 	justify-content: flex-start;
+	
 	border-top: 1px solid #e5e5e5;
+	
 	padding-left: 6%;
 	padding-right: 6%;
 	padding-top: 29px;
@@ -1220,7 +1296,6 @@ margin-right: 10px;
 .found-btn {
 	display: inline-block;
 	vertical-align: top;
-	width: 100%;
 		
 	width: 70px;
 	padding: 3px 20px;
@@ -1273,11 +1348,12 @@ margin-right: 10px;
 	margin-left: auto;
 	margin-right: 0%;
 	
+	text-align: right;
+  vertical-align: top;
+	
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 400;
-  text-align: right;
-  vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", "Myriad Pro", sans-serif;
 }
@@ -1292,6 +1368,7 @@ margin-right: 10px;
 .found-rating-img {
 	display: block;
 	vertical-align: top;
+	
 	background-image: url("../img/star.png");
   background-repeat: repeat-x;
 }
