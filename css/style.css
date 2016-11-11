@@ -87,8 +87,8 @@ h2 {
 .main-navigation-item {
 	display: inline-block;
 	
-	width: 20%;
-	padding-top: 2px;
+	width: 19%;
+	padding-top: 0px;
 	
 	list-style-type: none;
 	vertical-align: top;
@@ -101,6 +101,7 @@ h2 {
 
 .main-navigation-item:nth-child(1) {
   margin-left: 6%;
+	margin-right: 0.8%;
 	text-align:left;
 }
 
@@ -111,10 +112,12 @@ h2 {
 
 .main-navigation-item:nth-child(3) {
 	text-align:right;
+	margin-left: 2.3%;
 }
 
 .main-navigation-item:nth-child(4) {
 	text-align:right;
+	margin-left: 1%;
 }
 
 .main-navigation-link{
@@ -150,15 +153,16 @@ h2 {
 .welcome {
 	background: 
 		url("../img/mask-1200.png") center bottom no-repeat,
-		#477ca6 url("../img/background-photo-1200.jpg") center center no-repeat;
+		url("../img/background-photo-1200.jpg") center -82px no-repeat, 
+		#477ca6;
 	background-size: 
 		100%,
-		100% auto; 
+		100% ;  
 	
 	text-align: center;
 	
 	min-height: 508px;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 }
 	
 .welcome img {
@@ -186,20 +190,22 @@ h2 {
 
 .caption {
 	text-align: center;
-	margin-bottom: 55px;
+	margin-bottom: 38px;
 }
 
 .caption-title {
 	font-size: 21px;
-  line-height: 26px;
+  line-height: 27px;
 	font-weight: 700;
 	
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 
 .caption-text {
 	font-size: 14px;
   line-height: 26px;
+	margin-left: -4px;
+	
 }
 
 
@@ -224,17 +230,6 @@ h2 {
 	color: #ffffff;
 }
 
-/*
-.feature-inverse .feature-info {
-	width: 25.33%;
-	padding-left: 4%;
-	padding-right: 4%;
-}
-
-Это свойство требуется для 1200, а для 768 работает padding: 5%
-
-*/
-
 .feature-title, .info-title {
 	font-size: 21px;
   line-height: 21px;
@@ -243,11 +238,20 @@ h2 {
 
 .feature-title {
 	margin-top: 55px;
+	margin-bottom: 22px;
+}
+
+.feature-inverse .feature-title {
+	margin-bottom: 24px;
 }
 
 .feature-text, .info-text {
 	font-size: 14px;
   line-height: 21px;
+}
+
+.feature-title + .feature-text {
+	margin-bottom: 21px;
 }
 
 .feature-img {
@@ -290,11 +294,13 @@ h2 {
 .info-title {
 	display: inline-block;
 	position: relative;
-	margin-top: 50px;
+	margin-top: 48px;
+	margin-bottom: 10px;
 }
 
 .housing-title, .food-title, .souvenirs-title {
-	margin-top: 165px;
+	margin-top: 160px;
+	margin-bottom: 10px;
 }
 
 .housing-title::before {
@@ -342,6 +348,10 @@ h2 {
 	background-position: -10px -1155px;
 }
 
+.info-title + .info-text {
+	margin-bottom: 21px;
+}
+
 
 /*   looking-hotel   */
 
@@ -363,7 +373,7 @@ h2 {
 
 .looking-hotel-text {
 	font-size: 14px;
-  line-height: 21px;
+  line-height: 23px;
 }
 
 .form-container {
@@ -371,7 +381,7 @@ h2 {
 	display: inline-block;
 	
 	width: 568px;
-	margin-top: 34px;
+	margin-top: 32px;
 }
 
 .form-link {
@@ -423,11 +433,9 @@ h2 {
 	margin-bottom: 30px; 
 }
 
-/*
-.form label {
-	margin-right: 14px;
+.arrival-date {
+	margin-left: 2px;
 }
-*/
 
 .form-input {
 	width: 320px;
@@ -683,7 +691,7 @@ h2 {
 }
 
 .hashtag {
-	margin-top: 50px; 
+	margin-top: 45px; 
 	
 	text-align: center;
   font-size: 21px;
@@ -950,7 +958,7 @@ h2 {
 
 .filter-range-title {
 	margin-top: -10px;
-  margin-bottom: 9px;
+  margin-bottom: 0px;
 	margin-right: auto;
 }
 
@@ -1075,7 +1083,7 @@ h2 {
 
 .btn-filter-show {
 	padding: 8px 33px 8px 34px;
-  margin-top: 30px;
+  margin-top: 31px;
 	margin-left: -11px;
 	cursor: pointer;
 	
@@ -1285,6 +1293,9 @@ margin-right: 10px;
 }
 
 .found-title a{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
 	font-size: 21px;
   line-height: 26px;
 	font-weight: 700;
@@ -1304,10 +1315,11 @@ margin-right: 10px;
 .found-type, 
 .found-price {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .found-type {
-	width: 115px;
+	width: 111px;
 }
 
 .found-btn {
@@ -1315,7 +1327,7 @@ margin-right: 10px;
 	vertical-align: top;
 		
 	width: 70px;
-	padding: 3px 20px;
+	padding: 3px 19px;
 	border: 0px;
 	margin-top: 13px;
 	
@@ -1331,6 +1343,8 @@ margin-right: 10px;
 .found-btn-more {
 	margin-right: 2px;
 	background-color: #81b3d2;
+	padding-left: 15px;
+	padding-right: 24px;
 }
 
 .found-btn-more:hover {
@@ -1345,6 +1359,7 @@ margin-right: 10px;
 .found-btn-reserve {
 	width: 102px;
 	background-color: #766357;
+	padding-right: 22px;
 }
 
 .found-btn-reserve:hover {
