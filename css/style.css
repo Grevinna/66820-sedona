@@ -989,6 +989,7 @@ h2 {
 	width: 50%;
 	text-align: center;
 	line-height: 31px;
+	cursor: pointer;
 }
 
 .price-controls label {
@@ -997,7 +998,6 @@ h2 {
   line-height: 30px;
   vertical-align: top;
 	text-align: right;
-  cursor: pointer;
 }
 
 .min-price {
@@ -1026,12 +1026,11 @@ h2 {
 }
 
 .min-price + input {
-	width: 45%;
-	padding-left: %;
+	width: 40%;
 }
 
 .max-price + input {
-	width: 50%;
+	width: 45%;
 }
 
 /*   range   */
