@@ -409,10 +409,13 @@ h2 {
 
 /*   form   */
 
+.form-show {
+	display: block;
+}
 
 .form {
 	position: absolute;
-	display: block;
+	display: none;
 	
 	width: 568px;
 	box-sizing: border-box;
@@ -424,6 +427,11 @@ h2 {
 	font-size: 14px;
   line-height: 21px;
 	font-weight: 700;
+}
+
+.form-show {
+	display: block;
+	z-index: 2;
 }
 
 .arrival-date-box, 
@@ -658,8 +666,6 @@ h2 {
 	justify-content: space-between;
 	
 	height: 120px;
-	padding-left: %;
-	padding-right: %;
 	
 	font-family: inherit;
 	font-size: 14px;
@@ -673,6 +679,7 @@ h2 {
 .map + .footer {
 	margin-top: -120px;
 	background: rgba(255,255,255,0.9);
+	z-index: 2;
 }
 
 .footer a {

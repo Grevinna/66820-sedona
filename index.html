@@ -90,7 +90,7 @@
 					<p class="looking-hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 					<div class="form-container">
 						<a class="form-link">Поиск гостиницы в Седоне</a>
-						<form class="form" action="inner.html" method="get">  
+						<form class="form form-show" action="inner.html" method="get">  
 							<div class="arrival-date-box">
 							  <label class="arrival-date" for="arrival-date">Дата заезда:</label>
 								<input class="form-input form-input-arrival" type="text" name="arrival date" placeholder="24 апреля 2016" id="arrival-date">
@@ -113,7 +113,7 @@
 				</section>
 		  </main>
 			<section class="map">
-				<div class="map-content"></div>
+				<div class="map-content" id="yandex-map"></div>
 			</section>
 			<footer class="footer">
 				<section class="footer-section hashtag">
@@ -126,12 +126,26 @@
 				</section>
 				<section class="footer-section website-author">
 					<a class="website-author-link" href="#">Website by</a>
-	<!--   <img src="img/html-academy-black.png" width="113" height="39" alt="htmlacademy"> вставить при помощи before в CSS     -->
 				</section>
 			</footer>
 		</div>
 		<script>
-   
-    </script>
+      var link = document.querySelector(".form-link");
+      var popup = document.querySelector(".form");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.toggle("form-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("form-show")) {
+            popup.classList.remove("form-show");
+          }
+        }
+      });
+	  </script>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QCnc7fScu4HZBKKXvXGnLEjPJBYVvsNA&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
   </body>
 </html>
