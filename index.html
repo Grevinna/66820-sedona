@@ -23,7 +23,7 @@
 							<a class="main-navigation-link" href="#">Карта штата</a>
 						</li> 
 						<li class="main-navigation-item">
-							<a class="main-navigation-link" href="#">Гостиницы</a>
+							<a class="main-navigation-link" href="inner.html">Гостиницы</a>
 						</li> 
 					</ul>  
 				</nav>	
@@ -133,6 +133,8 @@
       var link = document.querySelector(".form-link");
       var popup = document.querySelector(".form");
 
+			popup.classList.remove("form-show");
+			
       link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.toggle("form-show");

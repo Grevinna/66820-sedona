@@ -153,8 +153,8 @@ h2 {
 .welcome {
 	background: 
 		url("../img/mask-1200.png") center bottom no-repeat,
-		url("../img/background-photo-1200.jpg") center -82px no-repeat, 
-		#477ca6;
+		url("../img/background-photo-1200.jpg") center no-repeat, 
+		#477ca6; /*    соответствует макету 768, если приводить к соответствию на 1200 (что не очень хорошо смотрится при уменьшении разрешения), то надо дополнительно по y задать -58px.   */
 	background-size: 
 		100%,
 		100% ;  
@@ -224,6 +224,7 @@ h2 {
 	width: 23.33%;
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-top: 22px;
 	
 	text-align: center;
 	background-color: #81b3d2;
@@ -237,7 +238,6 @@ h2 {
 }
 
 .feature-title {
-	margin-top: 55px;
 	margin-bottom: 22px;
 }
 
@@ -289,18 +289,17 @@ h2 {
 	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-top: 160px;
 }
 
 .info-title {
 	display: inline-block;
 	position: relative;
-	margin-top: 48px;
 	margin-bottom: 10px;
 }
 
-.housing-title, .food-title, .souvenirs-title {
-	margin-top: 160px;
-	margin-bottom: 10px;
+.info-gray .info-item {
+	padding-top: 48px;
 }
 
 .housing-title::before {
@@ -395,6 +394,8 @@ h2 {
 	color: #ffffff;
 	
 	background-color: #766357;
+	
+	cursor: pointer;
 }
 
 .form-link:hover {
@@ -664,7 +665,7 @@ h2 {
 .footer {
 	display: flex;
 	justify-content: space-between;
-	
+	align-items: center;
 	height: 120px;
 	
 	font-family: inherit;
@@ -694,9 +695,6 @@ h2 {
 }
 
 .hashtag {
-	margin-top: 45px; 
-	
-	text-align: center;
   font-size: 21px;
 }
 
@@ -778,13 +776,6 @@ h2 {
 
 /*   .website-author   */
 
-
-.website-author {
-  vertical-align: top;
-	text-align: center;
-	width: %;
-	margin-top: 40px;
-}
 
 .website-author-link {
 	position: relative;
@@ -1188,7 +1179,9 @@ h2 {
   border-bottom: 0px;
 }
 
-.sorting-item-active {
+.sorting-item-active,
+.sorting-item-active:hover,
+.sorting-item-active:active {
 	text-decoration: none;
 	color: #81b3d2;
 	border-bottom: 0px;
@@ -1245,7 +1238,9 @@ margin-right: 10px;
   border-bottom-color: #81b3d2;
 }
 
-.arrow-active::before {
+.arrow-active::before,
+.arrow-active:hover::before,
+.arrow-active:active::before {
 	border-top-color: #81b3d2;
   border-bottom-color: #81b3d2;
 }
