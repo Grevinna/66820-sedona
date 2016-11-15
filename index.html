@@ -94,14 +94,14 @@
 							<div class="arrival-date-box">
 							  <label class="arrival-date" for="arrival-date">Дата заезда:</label>
 								<div class="form-input-box">
-									<input class="form-input form-input-arrival" type="text" name="arrival date" placeholder="24 апреля 2016" id="arrival-date">
+									<input class="form-input form-input-arrival" type="text" name="arrival-date" placeholder="24 апреля 2016" id="arrival-date">
 									<div class="calendar"></div>
 								</div>
 							</div>
 							<div class="date-of-departure-box">
 							  <label class="date-of-departure"for="date-of-departure">Дата выезда:</label>
 								<div class="form-input-box">
-								  <input class="form-input form-input-departure" type="text" name="date of departure" placeholder="4 июля 2016" id="date-of-departure">
+								  <input class="form-input form-input-departure" type="text" name="date-of-departure" placeholder="4 июля 2016" id="date-of-departure">
 								  <div class="calendar"></div>
 								</div>
 							</div>
@@ -147,6 +147,12 @@
       var link = document.querySelector(".form-link");
       var popup = document.querySelector(".form");
 
+//			var form = document.querySelector("form");
+//			var arrival-date = document.querySelector("[name=arrival-date]");
+//      var date-of-departure = document.querySelector("[name=date-of-departure]");
+//			var adults = document.querySelector("[name=adults]");
+//      var children = document.querySelector("[name=children]");
+			
 			popup.classList.remove("form-show");
 			
       link.addEventListener("click", function(event) {
@@ -161,6 +167,13 @@
           }
         }
       });
+			
+//			form.addEventListener("submit", function(event) {
+//				if (!arrival-date.value || !date-of-departure.value || !adults.value || !children.value) {
+//					event.preventDefault();
+//					console.log("Нужно ввести значение"); 
+//				}
+//      });
 	  </script>
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QCnc7fScu4HZBKKXvXGnLEjPJBYVvsNA&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
   </body>

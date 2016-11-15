@@ -407,8 +407,24 @@ h2 {
 
 /*   form   */
 
+
+
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(0px);
+  }
+  50%  {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .form-show {
 	display: block;
+	animation: bounce 0.7s;
 }
 
 .form {
