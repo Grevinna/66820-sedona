@@ -93,19 +93,33 @@
 						<form class="form form-show" action="inner.html" method="get">  
 							<div class="arrival-date-box">
 							  <label class="arrival-date" for="arrival-date">Дата заезда:</label>
-								<input class="form-input form-input-arrival" type="text" name="arrival date" placeholder="24 апреля 2016" id="arrival-date">
+								<div class="form-input-box">
+									<input class="form-input form-input-arrival" type="text" name="arrival date" placeholder="24 апреля 2016" id="arrival-date">
+									<div class="calendar"></div>
+								</div>
 							</div>
 							<div class="date-of-departure-box">
 							  <label class="date-of-departure"for="date-of-departure">Дата выезда:</label>
-								<input class="form-input form-input-departure" type="text" name="date of departure" placeholder="4 июля 2016" id="date-of-departure">
+								<div class="form-input-box">
+								  <input class="form-input form-input-departure" type="text" name="date of departure" placeholder="4 июля 2016" id="date-of-departure">
+								  <div class="calendar"></div>
+								</div>
 							</div>
 							<div class="adults-box">
 							  <label class="adults" for="adults">Взрослые:</label>
-								<input class="form-input" type="text" name="adults" placeholder="2" id="adults">
+								<div class="form-input-box">
+									<div class="minus"></div>
+								  <input class="form-input" type="text" name="adults" placeholder="2" id="adults">
+									<div class="plus"></div>
+								</div>
 							</div>
 							<div class="children-box">
 							  <label class="children" for="children">Дети:</label>
-								<input class="form-input" type="text" name="children" placeholder="0" id="children">
+								<div class="form-input-box">
+									<div class="minus"></div>
+								  <input class="form-input" type="text"   name="children" placeholder="0" id="children">
+									<div class="plus"></div>
+								</div>
 							</div>
 							<button class="form-btn" type="submit">Найти</button> 
 						</form>

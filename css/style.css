@@ -64,7 +64,7 @@ h2 {
 
 .header {
 	position: relative;
-	min-height: 58px;
+	min-height: 56px;
 }
 
 .logo {
@@ -162,12 +162,11 @@ h2 {
 	text-align: center;
 	
 	min-height: 508px;
-	margin-bottom: 38px;
+	margin-bottom: 42px;
 }
 	
 .welcome img {
 	margin-top: 76px;
-	margin-bottom: 80px;
 }
 
 
@@ -190,7 +189,7 @@ h2 {
 
 .caption {
 	text-align: center;
-	margin-bottom: 38px;
+	margin-bottom: 36px;
 }
 
 .caption-title {
@@ -205,7 +204,6 @@ h2 {
 	font-size: 14px;
   line-height: 26px;
 	margin-left: -4px;
-	
 }
 
 
@@ -224,7 +222,7 @@ h2 {
 	width: 23.33%;
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-top: 22px;
+	padding-top: 26px;
 	
 	text-align: center;
 	background-color: #81b3d2;
@@ -238,11 +236,11 @@ h2 {
 }
 
 .feature-title {
-	margin-bottom: 22px;
+	margin-bottom: 24px;
 }
 
 .feature-inverse .feature-title {
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 }
 
 .feature-text, .info-text {
@@ -289,7 +287,7 @@ h2 {
 	text-align: center;
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-top: 160px;
+	padding-top: 134px;
 }
 
 .info-title {
@@ -299,7 +297,7 @@ h2 {
 }
 
 .info-gray .info-item {
-	padding-top: 48px;
+	padding-top: 22px;
 }
 
 .housing-title::before {
@@ -356,9 +354,9 @@ h2 {
 
 
 .looking-hotel {
-	min-height: 291px;
 	text-align: center;
 	text-transform: uppercase;
+	padding-top: 32px;
 }
 
 .looking-hotel-title {
@@ -366,7 +364,6 @@ h2 {
   line-height: 24px;
 	font-weight: 700;
 	
-	margin-top: 56px;
 	margin-bottom: 33px;
 }
 
@@ -440,6 +437,13 @@ h2 {
 .adults-box, 
 .children-box {
 	margin-bottom: 30px; 
+	line-height: 36px;
+}
+
+.form-input-box {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .form-input {
@@ -491,17 +495,13 @@ h2 {
    color: #000000;  
 }
 
-.arrival-date-box,
-.date-of-departure-box {
-	position: relative;
-}
-
-.arrival-date-box::before,
-.date-of-departure-box::before {
+.calendar {
   content: "";
   position: absolute;
   top: 50%;
-  right: 0%;
+  right: -5px;
+	
+	cursor: pointer;
 	
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
@@ -512,15 +512,13 @@ h2 {
   background-position: -10px -346px;
 }
 
-.arrival-date-box:hover::before,
-.date-of-departure-box:hover::before {
+.calendar:hover {
   width: 21px;
   height: 22px;
   background-position: -10px -262px;
 }
 
-.arrival-date-box:active::before,
-.date-of-departure-box:active::before {
+.calendar:active::before{
   width: 21px;
   height: 22px;
   background-position: -10px -304px;
@@ -550,66 +548,64 @@ h2 {
 	margin-left: 36px;
 }
 
-.adults-box::before,
-.children-box::before {
+.minus {
 	content: "";
   display: inline-block;
 	position: absolute;
 	top: 50%;
   right: 83px;
 	
+	cursor: pointer;
+	
   transform:translate(-50%, -50%);
 	background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
 	
 	width: 12px;
-  height: 3px;
-  background-position: -10px -1039px;
+  height: 12px;
+  background-position: -10px -1034px;
 }
 
-.adults-box:hover::before,
-.children-box:hover::before {
+.minus:hover {
 	width: 12px;
-	height: 3px;
-	background-position: -10px -993px;
+	height: 12px;
+	background-position: -10px -988px;
 }
 
-.adults-box:active::before,
-.children-box:active::before {
+.minus:active {
 	width: 12px;
-  height: 3px;
-  background-position: -10px -1016px;
+  height: 12px;
+  background-position: -10px -1011px;
 }
 
-.adults-box::after,
-.children-box::after {
+.plus {
 	content: "";
   display: inline-block;
 	position: absolute;
-	top: 50%;
-  right: 10px;
+	top: 45%;
+  right: 7px;
+	
+	cursor: pointer;
 	
   transform:translate(-50%, -50%);
 	background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
 	
-	width: 11px;
-	height: 11px;
-	background-position: -10px -1124px;
+	width: 12px;
+	height: 12px;
+	background-position: -10px -1123px;
 }
 
-.adults-box:hover::after,
-.children-box:hover::after {
-	width: 11px;
-	height: 11px;
-	background-position: -10px -1062px;
+.plus:hover {
+	width: 12px;
+	height: 12px;
+	background-position: -10px -1061px;
 }
 
-.adults-box:active::before,
-.children-box:active::before {
-	width: 11px;
-	height: 11px;
-	background-position: -10px -1093px;
+.plus:active {
+	width: 12px;
+	height: 12px;
+	background-position: -10px -1092px;
 }
 
 .form-btn {
@@ -617,7 +613,7 @@ h2 {
 	width: 100%;
 	
 	padding: 16px;
-	margin-top: 24px;
+	margin-top: 22px;
 	
 	vertical-align: top;
 	
@@ -746,7 +742,7 @@ h2 {
 .social-btn-fb::before {
 	width: 10px;
 	height: 19px;
-	background-position: -10px -556px;
+	background-position: -10px -558px;
 }
 
 .social-btn-youtube::before {
@@ -758,7 +754,7 @@ h2 {
 .social-btn-fb:active::before {
   width: 10px;
   height: 19px;
-  background-position: -10px -595px;
+  background-position: -10px -598px;
 }
 
 .social-btn-youtube:active::before{
