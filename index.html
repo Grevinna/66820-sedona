@@ -91,34 +91,34 @@
 					<div class="form-container">
 						<a class="form-link">Поиск гостиницы в Седоне</a>
 						<form class="form form-show" action="inner.html" method="get">  
-							<div class="arrival-date-box">
-							  <label class="arrival-date" for="arrival-date">Дата заезда:</label>
+							<div class="form-box arrival-date-box">
+							  <label class="form-name arrival-date" for="arrival-date">Дата заезда:</label>
 								<div class="form-input-box">
 									<input class="form-input form-input-arrival" type="text" name="arrival-date" placeholder="24 апреля 2016" id="arrival-date">
-									<div class="calendar"></div>
+									<div class="form-control calendar"></div>
 								</div>
 							</div>
-							<div class="date-of-departure-box">
-							  <label class="date-of-departure"for="date-of-departure">Дата выезда:</label>
+							<div class="form-box date-of-departure-box">
+							  <label class="form-name date-of-departure"for="date-of-departure">Дата выезда:</label>
 								<div class="form-input-box">
 								  <input class="form-input form-input-departure" type="text" name="date-of-departure" placeholder="4 июля 2016" id="date-of-departure">
-								  <div class="calendar"></div>
+								  <div class="form-control calendar"></div>
 								</div>
 							</div>
-							<div class="adults-box">
-							  <label class="adults" for="adults">Взрослые:</label>
+							<div class="form-box adults-box">
+							  <label class="form-name adults" for="adults">Взрослые:</label>
 								<div class="form-input-box">
-									<div class="minus"></div>
+									<div class="form-control minus"></div>
 								  <input class="form-input" type="text" name="adults" placeholder="2" id="adults">
-									<div class="plus"></div>
+									<div class="form-control plus"></div>
 								</div>
 							</div>
-							<div class="children-box">
-							  <label class="children" for="children">Дети:</label>
+							<div class="form-box children-box">
+							  <label class="form-name children" for="children">Дети:</label>
 								<div class="form-input-box">
-									<div class="minus"></div>
+									<div class="form-control minus"></div>
 								  <input class="form-input" type="text"   name="children" placeholder="0" id="children">
-									<div class="plus"></div>
+									<div class="form-control plus"></div>
 								</div>
 							</div>
 							<button class="form-btn" type="submit">Найти</button> 
@@ -148,8 +148,8 @@
       var popup = document.querySelector(".form");
 
 //			var form = document.querySelector("form");
-//			var arrival-date = document.querySelector("[name=arrival-date]");
-//      var date-of-departure = document.querySelector("[name=date-of-departure]");
+//			var ArrivalDate = document.querySelector("[name=arrival-date]");
+//      var DateOfDeparture = document.querySelector("[name=date-of-departure]");
 //			var adults = document.querySelector("[name=adults]");
 //      var children = document.querySelector("[name=children]");
 			
@@ -169,7 +169,7 @@
       });
 			
 //			form.addEventListener("submit", function(event) {
-//				if (!arrival-date.value || !date-of-departure.value || !adults.value || !children.value) {
+//				if (!ArrivalDate.value || !DateOfDeparture.value || !adults.value || !children.value) {
 //					event.preventDefault();
 //					console.log("Нужно ввести значение"); 
 //				}

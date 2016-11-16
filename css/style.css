@@ -405,16 +405,17 @@ h2 {
 }
 
 
+
 /*   form   */
 
 
 
 
 @keyframes bounce {
-  0%   {
+  0% {
     transform: translateY(0px);
   }
-  50%  {
+  50% {
     transform: translateY(80px);
   }
   100% {
@@ -448,12 +449,16 @@ h2 {
 	z-index: 2;
 }
 
-.arrival-date-box, 
-.date-of-departure-box, 
-.adults-box, 
-.children-box {
+.form-box {
 	margin-bottom: 30px; 
 	line-height: 36px;
+}
+
+.form-name {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 108px;
 }
 
 .form-input-box {
@@ -463,11 +468,12 @@ h2 {
 }
 
 .form-input {
-	width: 320px;
-	height: 22px;
+	box-sizing: border-box;
+	width: 346px;
+	height: 38px;
 	
 	padding: 8px 13px; 
-	margin-left: 14px;
+	padding-right: 36px;
 	
 	font-family: inherit;
 	font-size: 14px;
@@ -477,10 +483,6 @@ h2 {
 	
 	background-color: #f2f2f2;
 	border: 0px;
-}
-
-.arrival-date-box .form-input {
-	margin-left: 17px;
 }
 
 .form-input:hover {
@@ -511,117 +513,83 @@ h2 {
    color: #000000;  
 }
 
-.calendar {
-  content: "";
+.form-control {
+	content: "";
   position: absolute;
-  top: 50%;
-  right: -5px;
+	top: 50%;
+	right: -18px;
 	
 	cursor: pointer;
 	
-  transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
 	
-  width: 21px;
-  height: 22px;
-  background-position: -10px -346px;
+	width: 36px;
+  height: 36px;
+}
+
+.calendar {
+  background-position: -3px -340px;
 }
 
 .calendar:hover {
-  width: 21px;
-  height: 22px;
-  background-position: -10px -262px;
+  background-position: -3px -256px;
 }
 
-.calendar:active::before{
-  width: 21px;
-  height: 22px;
-  background-position: -10px -304px;
+.calendar:active {
+  background-position: -3px -298px;
 }
 
 .adults-box, 
 .children-box {
 	display: inline-block;
-	
-	position: relative;
-	width: 227px;
-	
 	vertical-align: top;
-	text-align: right;
+	box-sizing: border-box;
+	width: 227px;
+}
+
+.children-box {
+text-align: right;	
+}
+
+.children {
+	padding-right: 22px;
 }
 
 .adults-box .form-input, 
 .children-box .form-input {
-	width: 89px;
-	margin-left: 20px;
+	width: 114px;
+	padding-left: 36px;
+	padding-right: 36px;
 	
 	text-align: center;
-	vertical-align: middle;
-}
-
-.adults-box .form-input {
-	margin-left: 36px;
+	vertical-align: top;
 }
 
 .minus {
-	content: "";
-  display: inline-block;
-	position: absolute;
-	top: 50%;
-  right: 83px;
+  right: 60px;
 	
-	cursor: pointer;
-	
-  transform:translate(-50%, -50%);
-	background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-	
-	width: 12px;
-  height: 12px;
-  background-position: -10px -1034px;
+  background-position: 4px -1022px;
 }
 
 .minus:hover {
-	width: 12px;
-	height: 12px;
-	background-position: -10px -988px;
+	background-position: 4px -976px;
 }
 
 .minus:active {
-	width: 12px;
-  height: 12px;
-  background-position: -10px -1011px;
+  background-position: 4px -999px;
 }
 
 .plus {
-	content: "";
-  display: inline-block;
-	position: absolute;
-	top: 45%;
-  right: 7px;
-	
-	cursor: pointer;
-	
-  transform:translate(-50%, -50%);
-	background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-	
-	width: 12px;
-	height: 12px;
-	background-position: -10px -1123px;
+	background-position: 2px -1111px;
 }
 
 .plus:hover {
-	width: 12px;
-	height: 12px;
-	background-position: -10px -1061px;
+	background-position: 2px -1049px;
 }
 
 .plus:active {
-	width: 12px;
-	height: 12px;
-	background-position: -10px -1092px;
+	background-position: 2px -1080px;
 }
 
 .form-btn {
@@ -630,6 +598,8 @@ h2 {
 	
 	padding: 16px;
 	margin-top: 22px;
+	
+	cursor: pointer;
 	
 	vertical-align: top;
 	
@@ -833,11 +803,14 @@ h2 {
 
 
 
+
 /*    inner    */
 
 
 
+
 /*   filter   */
+
 
 
 .filter-container {
@@ -1285,20 +1258,14 @@ margin-right: 10px;
 }
 
 .found-block {
-	width: 258px;
-	
-	font-size: 14px;
-  line-height: 21px;
-	font-weight: 400;
   text-align: left;
-  vertical-align: top;
   text-transform: uppercase;
-  font-family: "PT Sans", "Myriad Pro", sans-serif;
+	margin-right: auto;
 }
 
 .found-title {
-	margin-top: -4px;
 	margin-bottom: 8px;
+	margin-top: 0px;
 }
 
 .found-title a{
@@ -1306,7 +1273,7 @@ margin-right: 10px;
 	vertical-align: top;
 	width: 100%;
 	font-size: 21px;
-  line-height: 26px;
+  line-height: 22px;
 	font-weight: 700;
   text-align: left;
 	color: #000000;
@@ -1319,6 +1286,18 @@ margin-right: 10px;
 
 .found-title a:active{
 	color: #b2b2b2;
+}
+
+.found-box {
+	width: 258px;
+	
+	font-size: 14px;
+  line-height: 21px;
+	font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Myriad Pro", sans-serif;
 }
 
 .found-type, 
