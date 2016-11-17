@@ -918,7 +918,7 @@ text-align: right;
 
 .filter-range {
   width: 31%;
-	max-width: 318px;
+	max-width: 330px;
 	min-width: 224px;
 	vertical-align: top;
 	text-align: center;
@@ -931,7 +931,6 @@ text-align: right;
 
 Ползунок максимума находится в разных местах полосы в разных макетах
 
-Решила оставить вариант, который интуитивно кажется оптимальным - выполнен аналогично блокам "инфраструктура" и "тип жилья".
 
 */
 
@@ -945,6 +944,7 @@ text-align: right;
   position: relative;
   height: 32px;
   margin-bottom: 20px;
+	margin-left: 10px;
 	
   font-size: 0;
   border: 2px solid #ffffff;
@@ -969,28 +969,30 @@ text-align: right;
 .price-item {
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 3px;
 	width: 50%;
-	text-align: center;
-	line-height: 31px;
+	text-align: left;
+	line-height: 28px;
 	cursor: pointer;
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 28px;
   vertical-align: top;
 	text-align: right;
+	
 }
 
 .min-price {
-	width: 50%;
-  padding-right: 5px;
+	width: 52%;
+  padding-right: 3px;
 }
 
 .max-price {
-	width: 45%;
-  padding-right: 5px;
+	width: 47%;
+  padding-right: 3px;
 }
 
 .price-controls input {
@@ -999,7 +1001,7 @@ text-align: right;
 	
 	vertical-align: top;
 	text-align: left;
-	line-height: 28px;
+	line-height: 26px;
 	font-size: 14px;
   color: inherit;
 	font-family: inherit;
@@ -1020,7 +1022,7 @@ text-align: right;
 
 .range-controls {
   position: relative;
-	margin-left: 1px;
+	margin-left: 10px;
 }
 
 .range-controls .scale {
@@ -1062,7 +1064,6 @@ text-align: right;
 .btn-filter-show {
 	padding: 8px 33px 8px 34px;
   margin-top: 31px;
-	margin-left: -11px;
 	cursor: pointer;
 	
   border: 2px solid #ffffff;
