@@ -423,10 +423,27 @@ h2 {
   }
 }
 
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-5px);
+  }
+  40%, 80% {
+    transform: translateX(5px);
+  }
+}
+
 .form-show {
 	display: block;
 	animation: bounce 0.7s;
 }
+
+.form-error {
+  animation: shake 0.6s;
+}
+
 
 .form {
 	position: absolute;
@@ -931,7 +948,6 @@ text-align: right;
 
 Ползунок максимума находится в разных местах полосы в разных макетах
 
-
 */
 
 .filter-range-title {
@@ -963,8 +979,6 @@ text-align: right;
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
-
-/*  контент в фильтре (внутри ячеек "от-до" съезжает при увеличении разрешения с 768 до 1200  */
 
 .price-item {
 	display: inline-block;

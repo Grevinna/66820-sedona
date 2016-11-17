@@ -146,14 +146,16 @@
 		<script>
       var link = document.querySelector(".form-link");
       var popup = document.querySelector(".form");
-
-//			var form = document.querySelector("form");
-//			var ArrivalDate = document.querySelector("[name=arrival-date]");
-//      var DateOfDeparture = document.querySelector("[name=date-of-departure]");
-//			var adults = document.querySelector("[name=adults]");
-//      var children = document.querySelector("[name=children]");
+			var formBtn = document.querySelector(".form-btn");
+			var form = document.querySelector("form");
+			var arrivalDate = document.querySelector("[name=arrival-date]");
+      var dateOfDeparture = document.querySelector("[name=date-of-departure]");
+			var adults = document.querySelector("[name=adults]");
+      var children = document.querySelector("[name=children]");
+			
 			
 			popup.classList.remove("form-show");
+			popup.classList.remove("form-error");
 			
       link.addEventListener("click", function(event) {
         event.preventDefault();
@@ -164,16 +166,24 @@
         if (event.keyCode === 27) {
           if (popup.classList.contains("form-show")) {
             popup.classList.remove("form-show");
+						popup.classList.remove("form-error");
           }
         }
       });
 			
-//			form.addEventListener("submit", function(event) {
-//				if (!ArrivalDate.value || !DateOfDeparture.value || !adults.value || !children.value) {
-//					event.preventDefault();
-//					console.log("Нужно ввести значение"); 
-//				}
-//      });
+			formBtn.addEventListener("click", function(event) {
+				if (!arrivalDate.value || !dateOfDeparture.value || !adults.value || !children.value) {
+					event.preventDefault();
+					popup.classList.remove("form-error");
+          popup.offsetWidth = popup.offsetWidth;
+					console.log("Нужно ввести значение"); 
+					popup.classList.add("form-error");
+				}
+			  else {
+//					вернуть кнопке type="submit" 
+//					<button class="form-btn" type="submit">Найти</button> 
+			  }
+      });
 	  </script>
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=QCnc7fScu4HZBKKXvXGnLEjPJBYVvsNA&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>
   </body>
