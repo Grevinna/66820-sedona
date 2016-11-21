@@ -368,6 +368,7 @@ h2 {
 	color: #ffffff;
 	
 	background-color: #766357;
+	text-decoration: none;
 	
 	cursor: pointer;
 }
@@ -1377,6 +1378,8 @@ margin-right: 10px;
 
 
 /* .sprite */
+
+
 
 .sprite {
     background-image: url(//img/sprite.png);
